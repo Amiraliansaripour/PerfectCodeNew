@@ -1,0 +1,143 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    background-color:#141A2A;
+}
+
+/* List Style */
+.header-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    
+}
+
+.links ul{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 25px;
+  list-style: none;
+  font-size: 18px;
+}
+
+.join {
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #1649ff;
+}
+/* List Style */
+
+
+/* Header Content */
+
+.header-content{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    padding: 35px;
+}
+
+.content {
+  text-align: right;
+  color: #fff;
+  margin-bottom: 10%;
+}
+.content h1{
+  width: 80%;
+}
+
+.content p {
+  color: #7e8699;
+  width: 80%;
+  direction: rtl;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Vazirmatn', sans-serif;
+
+}
+
+.content-image{
+ position: relative;
+ padding: 0;
+}
+.content-image .img-back{
+    width: 650px;
+    height:650px;
+    
+    z-index: 1;
+}
+.content-image .mobile-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width:100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.content-image .obgect-img{
+  position: absolute;
+  top: 20%;
+  right: 15%;
+
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+}
+
+.content-image .obgect-img1{
+  position: absolute;
+  top: 41%;
+  left: 18%;
+
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+}
+
+.content-image .obgect-img2{
+  position: absolute;
+  top: 5%;
+  left: 20%;
+
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+}
+
+.content-image .obgect-img3{
+  position: absolute;
+  top: 51%;
+  right: 25%;
+
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+}
+.content-image .obgect-img4{
+  position: absolute;
+  top: 61%;
+  left: 25%;
+
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+}
+.content-image .obgect-img5{
+  position: absolute;
+  top: 3%;
+  right: 20%;
+
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+}
+
+
