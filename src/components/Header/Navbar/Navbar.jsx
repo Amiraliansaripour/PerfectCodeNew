@@ -16,7 +16,7 @@ const Navbar = () => {
                     <li><Link to="/contact">تماس باما</Link></li>
                 </ul>
             </div>
-            <div className="join">
+            <div className="btn-active">
                 <Link to="/contact">تماس باما</Link>
             </div>
         </div>
