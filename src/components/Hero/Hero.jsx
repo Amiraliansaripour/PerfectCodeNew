@@ -23,7 +23,7 @@ const Hero = () => {
                 </div>
                 <div className="content-image">
                     <img src="../assets/stylingImage/wave-img.png" alt="" className="img-back" />
-                    <img src="../assets/stylingImage/mobile-img.png" alt="" className="mobile-img" />
+                    <img src="../assets/stylingImage/mobile1.png" alt="" className="mobile-img" />
 
                     <img src="../assets/stylingImage/mosalas.png" alt="" className="obgect-img coin" />
                     <img src="../assets/stylingImage/circle.png" alt="" className="obgect-img3 coin" />
