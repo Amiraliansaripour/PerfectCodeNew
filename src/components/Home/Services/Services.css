@@ -29,16 +29,14 @@
 .services-grid{
     padding: 20px;
 }
-.services-grid div{
-    gap: 15px;
-}
+
 
 .services-grid div div{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 30px;
+    padding: 20px;
     background-color: #1D263B;
     border-radius: 15px;
    
@@ -56,5 +54,12 @@
 
 .services-grid div div div i{
     font-size: 25px;
+}
+
+.services-grid div div p{
+    text-align: center;
+    padding: 10px;
+    width: 90%;
+    color: #9499A6;
 }
 
