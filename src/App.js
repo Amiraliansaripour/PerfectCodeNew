@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Hero />
         <Routes>
           {routes.map((route, index) => {
             return <Route path={route.path} element={route.element} exact={route.exact} key={index} />

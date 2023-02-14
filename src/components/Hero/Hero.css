@@ -198,7 +198,7 @@
 @media screen and (max-width:1000px) {
   .header-content {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .content {

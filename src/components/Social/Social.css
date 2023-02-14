@@ -1,0 +1,22 @@
+.social {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    padding: 25px;
+    height: 100px;
+}
+
+.social p {
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.social-img {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}

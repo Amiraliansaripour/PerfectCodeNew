@@ -1,10 +1,12 @@
 import React from 'react'
-import Header from '../Hero/Hero'
+import Hero from '../Hero/Hero'
+import Social from '../Social/Social'
 
 const Home = () => {
   return (
     <>
-
+    <Hero />
+    <Social />
     </>
   )
 }
