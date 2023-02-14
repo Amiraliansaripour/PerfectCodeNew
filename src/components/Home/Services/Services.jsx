@@ -15,8 +15,8 @@ const Services = () => {
             </div>
 
             <div className="services-grid">
-                <div className="row box">
-                    <div className="col-12 col-lg-4 col-md-6">
+                <div className="row box gap-5 justify-content-center">
+                    <div className="col-12 col-lg-3 col-md-5">
                         <div className="icon-box">
                             <i className="fa fa-anchor"></i>
                         </div>
@@ -25,7 +25,7 @@ const Services = () => {
                             برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند
                         </p>
                     </div>
-                    <div className="col-12 col-lg-4 col-md-6">
+                    <div className="col-12 col-lg-3 col-md-5">
                         <div className="icon-box">
                             <i className="fa fa-anchor"></i>
                         </div>
@@ -34,7 +34,7 @@ const Services = () => {
                             برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند
                         </p>
                     </div>
-                    <div className="col-12 col-lg-4 col-md-6">
+                    <div className="col-12 col-lg-3 col-md-5">
                         <div className="icon-box">
                             <i className="fa fa-anchor"></i>
                         </div>
@@ -43,10 +43,8 @@ const Services = () => {
                             برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند
                         </p>
                     </div>
-                </div>
 
-                <div className="row box">
-                    <div className="col-12 col-lg-4 col-md-6">
+                    <div className="col-12 col-lg-3 col-md-5">
                         <div className="icon-box">
                             <i className="fa fa-anchor"></i>
                         </div>
@@ -55,7 +53,7 @@ const Services = () => {
                             برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند
                         </p>
                     </div>
-                    <div className="col-12 col-lg-4 col-md-6">
+                    <div className="col-12 col-lg-3 col-md-5">
                         <div className="icon-box">
                             <i className="fa fa-anchor"></i>
                         </div>
@@ -64,7 +62,7 @@ const Services = () => {
                             برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند
                         </p>
                     </div>
-                    <div className="col-12 col-lg-4 col-md-6">
+                    <div className="col-12 col-lg-3 col-md-5">
                         <div className="icon-box">
                             <i className="fa fa-anchor"></i>
                         </div>

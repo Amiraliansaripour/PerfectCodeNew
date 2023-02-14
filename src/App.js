@@ -6,7 +6,7 @@ import routes from './Routes';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container-fluid">
       <Router>
         <Routes>
           {routes.map((route, index) => {
