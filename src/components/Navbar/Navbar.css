@@ -7,6 +7,7 @@
     justify-content: space-around;
     color: #fff;
     padding: 20px 0;
+    position: relative;
   }
   
   .links ul {
@@ -17,8 +18,73 @@
     gap: 25px;
     list-style: none;
     font-size: 18px;
+    z-index: 20;
   }
   
   
   /* List Style */
+
   
+  /* Hamburger Menu */
+  
+.hamburger {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  z-index: 10;
+  display: none;
+}
+
+.hamburger i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.close {
+  font-size: 2.5rem;
+  display: none;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 60;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 680px){
+
+  .hamburger {
+    display: block;
+  }
+  .close {
+    display: block;
+  }
+  .header-list {
+    height: auto;
+    z-index: 50;
+    position: relative;
+  }
+  .links ul {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #141A2A;
+    gap: 5rem;
+    transition: 1s;
+  }
+
+  .links ul.active {
+    right: 0;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+} 
