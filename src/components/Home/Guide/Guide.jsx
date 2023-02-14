@@ -4,6 +4,7 @@ const Guide = () => {
   return (
     <div className="guide">
         <h2>نحوه ثبت سفارش</h2>
+        
     </div>
   )
 }

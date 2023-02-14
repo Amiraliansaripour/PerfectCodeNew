@@ -1,3 +1,10 @@
+:root {
+  --light-color: #fff;
+  --sec-color:#9499A6;
+  --background: #141A2A;
+
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
