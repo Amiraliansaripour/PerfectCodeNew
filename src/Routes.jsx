@@ -1,6 +1,6 @@
 import React from 'react'
-import Home from './components/Header/Home/Home'
-import NotFound from './components/Header/NotFound/NotFound'
+import Home from './components/Home/Home'
+import NotFound from './components/NotFound/NotFound'
 
 
 

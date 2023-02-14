@@ -4,29 +4,6 @@
   background-color: #141A2A;
 }
 
-/* List Style */
-.header-list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  color: #fff;
-  padding: 20px 0;
-}
-
-.links ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row-reverse;
-  gap: 25px;
-  list-style: none;
-  font-size: 18px;
-}
-
-
-/* List Style */
-
 
 /* Header Content */
 

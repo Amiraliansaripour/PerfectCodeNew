@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
-import Navbar from './Navbar/Navbar';
+import './Hero.css';
+import Navbar from '../Navbar/Navbar';
 
-const Header = () => {
+const Hero = () => {
     return (
         <div className="header">
             <Navbar />
@@ -37,4 +37,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Hero
