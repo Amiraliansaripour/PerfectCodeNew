@@ -17,6 +17,7 @@
 .links ul {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: row-reverse;
   gap: 25px;
   list-style: none;
@@ -166,15 +167,15 @@
 
 @keyframes rotatee {
   0% {
-  transform:scale(1) rotate(0);
+    transform: scale(1) rotate(0);
   }
 
   50% {
-  transform:scale(1.2) rotate(30deg);
+    transform: scale(1.2) rotate(30deg);
   }
 
   100% {
- transform:scale(1) rotate(0);
+    transform: scale(1) rotate(0);
 
 
   }
@@ -182,15 +183,15 @@
 
 @keyframes roted {
   0% {
-  transform: rotate(0);
+    transform: rotate(0);
   }
 
   50% {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 
   100% {
- transform: rotate(0);
+    transform: rotate(0);
   }
 
 }
@@ -198,16 +199,16 @@
 @keyframes rotate2d {
   0% {
     transform: rotate(0);
-    }
-  
-    50% {
+  }
+
+  50% {
     transform: rotate(180deg);
-    }
-  
-    100% {
-   transform: rotate(0);
-    }
-  
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+
 }
 
 .join-btn {
@@ -232,5 +233,37 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .content-image .coin {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+@media screen and (max-width:550px) {
+  .content-image .obgect-img {
+   right: 10%;
+  }
+
+  .content-image .obgect-img1 {
+    left: 11%;
+  }
+
+  .content-image .obgect-img2 {
+    left: 15%;
+  }
+
+  .content-image .obgect-img3 {
+    right: 20%;
+  }
+
+  .content-image .obgect-img4 {
+    left: 20%;
+  }
+
+  .content-image .obgect-img5 {
+    right: 11%;
   }
 }

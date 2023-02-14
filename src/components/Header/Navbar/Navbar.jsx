@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className="header-list">
             {/* logo */}
             <div className="logo">
-                <h1>Logo</h1>
+                <h1>Perfect</h1>
             </div>
             <div className="links">
                 <ul>
@@ -18,6 +18,10 @@ const Navbar = () => {
             </div>
             <div className="btn-active">
                 <Link to="/contact">تماس باما</Link>
+            </div>
+
+            <div className='hamburger'>
+                <i className='fa fa-navicon'></i>
             </div>
         </div>
     )

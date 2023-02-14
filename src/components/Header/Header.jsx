@@ -25,12 +25,12 @@ const Header = () => {
                     <img src="../assets/stylingImage/wave-img.png" alt="" className="img-back" />
                     <img src="../assets/stylingImage/mobile-img.png" alt="" className="mobile-img" />
 
-                    <img src="../assets/stylingImage/mosalas.png" alt="" className="obgect-img" />
-                    <img src="../assets/stylingImage/circle.png" alt="" className="obgect-img3" />
-                    <img src="../assets/stylingImage/marpich.png" alt="" className="obgect-img2" />
-                    <img src="../assets/stylingImage/3dmokab.png" alt="" className="obgect-img1" />
-                    <img src="../assets/stylingImage/545.png" alt="" className="obgect-img4" />
-                    <img src="../assets/stylingImage/react.png" alt="" className="obgect-img5" />
+                    <img src="../assets/stylingImage/mosalas.png" alt="" className="obgect-img coin" />
+                    <img src="../assets/stylingImage/circle.png" alt="" className="obgect-img3 coin" />
+                    <img src="../assets/stylingImage/marpich.png" alt="" className="obgect-img2 coin" />
+                    <img src="../assets/stylingImage/3dmokab.png" alt="" className="obgect-img1 coin" />
+                    <img src="../assets/stylingImage/545.png" alt="" className="obgect-img4 coin" />
+                    <img src="../assets/stylingImage/react.png" alt="" className="obgect-img5 coin" />
                 </div>
             </div>
         </div>
