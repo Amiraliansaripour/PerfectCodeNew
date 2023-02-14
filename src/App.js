@@ -12,7 +12,6 @@ function App() {
           {routes.map((route, index) => {
             return <Route path={route.path} element={route.element} exact={route.exact} key={index} />
           })}
-
         </Routes>
       </Router>
     </div>
