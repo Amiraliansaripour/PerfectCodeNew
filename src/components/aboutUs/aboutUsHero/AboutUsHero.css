@@ -1,0 +1,24 @@
+.about-us-hero {
+    display: flex;
+    flex-direction: column;
+}
+.header-content{
+    padding: 0;
+}
+.bg-img {
+    background-image: linear-gradient(180deg, transparent, #141a2a 96%), url("/public/assets/stylingImage/about-us/about-us-hero.svg");
+    background-repeat: no-repeat;
+    height: 650px !important;
+    transform: rotateY(180deg) translate(20px);
+    -webkit-transform: rotateY(180deg) translate(20px);
+    -moz-transform: rotateY(180deg) translate(20px);
+    -ms-transform: rotateY(180deg) translate(20px);
+    -o-transform: rotateY(180deg) translate(20px);
+    margin: 0 !important;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: #141A2A;
+}

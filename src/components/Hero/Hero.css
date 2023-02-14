@@ -7,42 +7,7 @@
 
 /* Header Content */
 
-.header-content {
-  /* width: 100%; */
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-around;
-  padding: 35px;
-  overflow: hidden;
-}
 
-.content {
-  width: 100%;
-  text-align: right;
-  color: #fff;
-  margin-bottom: 10%;
-  padding: 10px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-  font-family: 'Vazirmatn', sans-serif;
-}
-
-.content h1 {
-  width: 90%;
-}
-
-.content p {
-  color: #7e8699;
-  width: 100%;
-  direction: rtl;
-  text-align: justify;
-  font-size: 20px;
-
-}
 
 .content-image {
   width: 100%;
