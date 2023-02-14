@@ -20,6 +20,10 @@ const Social = () => {
             <img src="https://assets.website-files.com/61772ea4a9789e72c321a4f0/61795f87666a923b53ce2994_company-logo-facebook-defi-x-template.svg" alt="Google" />
             </a>
 
+            <a href="https://perfectcode.ir">
+            <img src="https://assets.website-files.com/61772ea4a9789e72c321a4f0/61795f860d09efb1b50fdb91_company-logo-pinterest-defi-x-template.svg" alt="Google" />
+            </a>
+
         </div>
     </div>
   )
