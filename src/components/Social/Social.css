@@ -11,7 +11,7 @@
 .social p {
     font-size: 18px;
     font-weight: bold;
-    
+    margin-top: 10px;
 }
 
 .social-img {
@@ -33,5 +33,6 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        gap: 20px;
     }
 }
