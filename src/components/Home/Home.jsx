@@ -1,5 +1,6 @@
 import React from 'react'
-import Hero from '../Hero/Hero'
+import Hero from './Hero/Hero'
+import Guide from './Guide/Guide'
 import Services from './Services/Services'
 import Social from './Social/Social'
 
@@ -9,6 +10,7 @@ const Home = () => {
     <Hero />
     <Social />
     <Services />
+    <Guide />
     </>
   )
 }

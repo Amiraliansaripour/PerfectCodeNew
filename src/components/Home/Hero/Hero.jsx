@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../../Navbar/Navbar';
 import './Hero.css';
-import Navbar from '../Navbar/Navbar';
+
 
 const Hero = () => {
     return (
