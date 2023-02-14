@@ -1,6 +1,5 @@
 import React from 'react'
 import './App.css';
-import Hero from './components/Hero/Hero';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import routes from './Routes';
 
