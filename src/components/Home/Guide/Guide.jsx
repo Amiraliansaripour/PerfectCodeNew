@@ -27,7 +27,7 @@ const Guide = () => {
 
           <div className="guide-box">
             <div className="icon-box">
-              <i className="fa fa-user-circle-o"></i>
+              <i className="fa fa-television"></i>
             </div>
             <h3>ثبت اطلاعات داخل سایت</h3>
           </div>
