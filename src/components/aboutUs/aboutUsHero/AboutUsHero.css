@@ -16,6 +16,10 @@
     -o-transform: rotateY(180deg) translate(20px);
     margin: 0 !important;
 }
+.content{
+    width: 60%;
+    justify-content: flex-end;
+}
 
 .header {
     width: 100%;
