@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const AboutUsHero = () => {
   return (
     <>
-      <div className='header about-us-hero'>
+      <section className='content header about-us-hero'>
         <div className="header-content p-3">
           <div className="content">
             <h1>
@@ -18,13 +18,10 @@ const AboutUsHero = () => {
               <Link to="/" className="btn-active">مشاوره اختصاصی</Link>
             </div>
           </div>
-          <div className="bg-img w-50 p-md-absolut w-md-100 z-2">
-          </div>
+          <div className="bg-img w-50 p-md-absolut w-md-100 z-2"></div>
         </div>
-      </div>
+      </section>
     </>
-
-
   )
 }
 

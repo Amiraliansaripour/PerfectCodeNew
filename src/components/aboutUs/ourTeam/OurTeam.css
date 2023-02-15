@@ -1,0 +1,13 @@
+.ourTeamIcon{
+    width: 60px !important;
+    height: 60px !important;
+    background-color: #1649FF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.ourTeam p {
+    font-size: 16px;
+}
