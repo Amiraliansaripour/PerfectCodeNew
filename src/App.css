@@ -16,12 +16,16 @@ body {
   font-family: "Vazirmatn", sans-serif;
 }
 
-
+/* typho */
 a {
   text-decoration: none;
   color: #fff;
   transition: 0.5s;
   font-family: 'Vazirmatn', sans-serif;
+  direction: rtl;
+}
+p,h1,h2,h3,strong{
+  direction: rtl;
 }
 
 a:hover {
