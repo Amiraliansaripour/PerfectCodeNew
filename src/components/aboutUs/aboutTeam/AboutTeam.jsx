@@ -1,6 +1,6 @@
 import React from 'react'
-import './OurTeam.css'
-const OurTeam = () => {
+import './AboutTeam.css'
+const AboutTeam = () => {
     return (
         <section className='ourTeam row content d-flex justify-content-center align-items-center flex-row m-auto'>
             <div className='col-12 col-md-5 d-flex flex-column gap-5 mb-5'>
@@ -40,4 +40,4 @@ const OurTeam = () => {
     )
 }
 
-export default OurTeam
+export default AboutTeam
