@@ -16,13 +16,23 @@
 }
 .services-title h2{
     padding: 10px;
+    width: 100%;
 }
 
 
 .services-title div p{
     text-align: right;
-    width: 80%;
-    color: #9499A6;
+    width: 60%;
+    color: var(--sec-color);
+}
+
+@media only screen and (max-width: 970px) {
+    .services-title{
+        justify-content: center;
+    }
+    .services-title div p{
+        display: none;
+    }
 }
 
 

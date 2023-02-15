@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../../Navbar/Navbar';
 import './Hero.css';
-import Navbar from '../Navbar/Navbar';
+
 
 const Hero = () => {
     return (
@@ -31,6 +32,7 @@ const Hero = () => {
                     <img src="../assets/stylingImage/3dmokab.png" alt="" className="obgect-img1 coin" />
                     <img src="../assets/stylingImage/545.png" alt="" className="obgect-img4 coin" />
                     <img src="../assets/stylingImage/react.png" alt="" className="obgect-img5 coin" />
+                    <img src="../assets/stylingImage/django.png" alt="" className="obgect-img6 coin" />
                 </div>
             </div>
         </div>

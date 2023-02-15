@@ -62,7 +62,7 @@
 
 .content-image .obgect-img2 {
   position: absolute;
-  top: 5%;
+  top: 1%;
   left: 20%;
 
   width: 100px;
@@ -106,6 +106,15 @@
   animation: rotate2d 10s infinite;
 }
 
+.content-image .obgect-img6{
+  position: absolute;
+  top: 23%;
+  left: 20%;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  animation: rotate2d 10s infinite;
+}
 
 @keyframes rotatee {
   0% {
