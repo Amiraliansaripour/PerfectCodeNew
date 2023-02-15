@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css';
+import './Responsive.css'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import routes from './Routes';
 

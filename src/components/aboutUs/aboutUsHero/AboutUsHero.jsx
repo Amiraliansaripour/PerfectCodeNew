@@ -18,7 +18,7 @@ const AboutUsHero = () => {
               <Link to="/" className="btn-active">مشاوره اختصاصی</Link>
             </div>
           </div>
-          <div className="bg-img w-50 z-2">
+          <div className="bg-img w-50 p-md-absolut w-md-100 z-2">
           </div>
         </div>
       </div>

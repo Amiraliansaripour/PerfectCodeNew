@@ -1,25 +1,27 @@
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1400px) {}
 
-}
+@media only screen and (max-width: 1400px) {}
 
-@media only screen and (max-width: 1400px) {
-
-}
-
-@media only screen and (max-width: 1200px) {
-
-}
+@media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 992px) {
+    /* content */
+    .content {
+        width: 100% !important;
+        z-index: 2;
+    }
 
+    /* about us hero */
+    .bg-img {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        z-index: 1;
+    }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {}
 
-}
-
-@media only screen and (max-width: 576px) {
-
-}
+@media only screen and (max-width: 576px) {}
 
 @media only screen and (max-width:327px) {}
