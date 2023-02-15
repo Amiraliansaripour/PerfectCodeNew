@@ -7,8 +7,6 @@
 
 /* Header Content */
 
-
-
 .content-image {
   width: 100%;
   display: flex;
@@ -42,58 +40,55 @@
   position: absolute;
   top: 20%;
   right: 15%;
-
   width: 100px;
   height: 100px;
   z-index: 2;
   animation: rotatee 8s infinite;
+  -webkit-animation: rotatee 8s infinite;
 }
 
 .content-image .obgect-img1 {
   position: absolute;
   top: 41%;
   left: 18%;
-
   width: 100px;
   height: 100px;
   z-index: 2;
   animation: roted 10s infinite;
+  -webkit-animation: roted 10s infinite;
 }
 
 .content-image .obgect-img2 {
   position: absolute;
   top: 1%;
   left: 20%;
-
   width: 100px;
   height: 100px;
   z-index: 2;
   animation: rotatee 10s infinite;
-
+  -webkit-animation: rotatee 10s infinite;
 }
 
 .content-image .obgect-img3 {
   position: absolute;
   top: 51%;
   right: 25%;
-
   width: 100px;
   height: 100px;
   z-index: 2;
   animation: rotatee 10s infinite;
-
+  -webkit-animation: rotatee 10s infinite;
 }
 
 .content-image .obgect-img4 {
   position: absolute;
   top: 61%;
   left: 25%;
-
   width: 100px;
   height: 100px;
   z-index: 2;
   animation: rotate2d 10s infinite;
-
+  -webkit-animation: rotate2d 10s infinite;
 }
 
 .content-image .obgect-img5 {
@@ -104,6 +99,7 @@
   height: 100px;
   z-index: 2;
   animation: rotate2d 10s infinite;
+  -webkit-animation: rotate2d 10s infinite;
 }
 
 .content-image .obgect-img6{
@@ -114,6 +110,7 @@
   height: 100px;
   z-index: 2;
   animation: rotate2d 10s infinite;
+  -webkit-animation: rotate2d 10s infinite;
 }
 
 @keyframes rotatee {
@@ -169,7 +166,7 @@
 }
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:992px) {
   .header-content {
     display: flex;
     flex-direction: column;
