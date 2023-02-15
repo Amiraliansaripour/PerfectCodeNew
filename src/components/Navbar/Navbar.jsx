@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 const Navbar = () => {
     const navRef = useRef()
-    const resMenu =() =>{
+    const resMenu = () => {
         navRef.current.classList.toggle("active")
     }
     return (
         <div className="header-list">
-            {/* logo */}
+
             <div className="logo">
-                <h1>Perfect</h1>
+                <img src="../assets/stylingImage/logo/logo.png" alt="پرفکت کد" width='60' height='60' />
             </div>
             <div className="links">
                 <ul ref={navRef}>
