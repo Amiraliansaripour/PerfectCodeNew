@@ -42,6 +42,7 @@
 .guide-text .guide-box {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: row-reverse;
 }
 
@@ -55,7 +56,7 @@
   padding: 10px;
   margin-left: 10px;
   border-radius: 50%;
-  background-color:#1649FF ;
+  background-color: var(--blue-color);
 }
 
 .guide-box .icon-box i{
