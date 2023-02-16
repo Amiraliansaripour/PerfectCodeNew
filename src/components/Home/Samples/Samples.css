@@ -81,8 +81,9 @@
 }
 
 .sample-slide-title .sample-slide-name h3{
-    font-size: 20px;
+    font-size: 16px;
     text-align: right;
+    width: 100%;
     
 }
 
@@ -90,6 +91,7 @@
     text-align: right;
     font-weight: bold;
     color: var(--sec-color);
+    font-size: 12px;
 }
 
 /* slide description */
@@ -99,7 +101,7 @@
     align-items: flex-START;
     flex-direction: column;
     text-align: justify;
-    padding: 10px;
+    padding: 20px;
     direction: rtl;
 
 }
@@ -107,13 +109,22 @@
 
 .sample-slide-description p{
     color: var(--sec-color);
-
-
-
+    padding: 10px;
 }
 
 
 .sample-slide-description a{
     text-align: right;
-    border-bottom: 1px solid var(--sec-color);
+    padding: 5px 10px;
+    background-color: var(--blue-color);
+    border-radius: 10px;
+}
+
+.sample-slide-description a:hover{
+    background-color: var(--sec-color) ;
+    color: var(--light-color);
+}
+
+.sample-slide-description a i{
+    margin-right: 10px;
 }
