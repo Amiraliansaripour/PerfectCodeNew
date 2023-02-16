@@ -61,7 +61,12 @@ a:hover {
   box-sizing: border-box;
 }
 
-/* content */
+/* content & container */
+
+section {
+  width: 100%;
+}
+
 .content {
   width: 100%;
   text-align: right;
