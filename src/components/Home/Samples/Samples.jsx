@@ -17,15 +17,15 @@ const Samples = () => {
     },
     440: {
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
     680: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 3,
-      spaceBetween: 50,
+      slidesPerView: 4,
+      spaceBetween: 20,
     },
   };
   return (
@@ -45,7 +45,6 @@ const Samples = () => {
           slidesPerView={3}
           breakpoints={sliderSettings}
           pagination={{ clickable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
           onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
           }}
@@ -71,7 +70,7 @@ const Samples = () => {
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
                 </p>
 
-                <Link to="/samples/2">دیدن پیش نمایش نمونه کار<i className="fa fa-angle-double-left"></i></Link>
+                <Link to="/samples/2">پیش نمایش<i className="fa fa-angle-double-left"></i></Link>
               </div>
 
             </div>
@@ -98,7 +97,7 @@ const Samples = () => {
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
                 </p>
 
-                <Link to="/samples/2">دیدن پیش نمایش نمونه کار<i className="fa fa-angle-double-left"></i></Link>
+                <Link to="/samples/2">پیش نمایش<i className="fa fa-angle-double-left"></i></Link>
               </div>
 
             </div>
@@ -124,7 +123,7 @@ const Samples = () => {
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
                 </p>
 
-                <Link to="/samples/2">دیدن پیش نمایش نمونه کار<i className="fa fa-angle-double-left"></i></Link>
+                <Link to="/samples/2">پیش نمایش<i className="fa fa-angle-double-left"></i></Link>
               </div>
 
             </div>
@@ -150,7 +149,7 @@ const Samples = () => {
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
                 </p>
 
-                <Link to="/samples/2">دیدن پیش نمایش نمونه کار<i className="fa fa-angle-double-left"></i></Link>
+                <Link to="/samples/2">پیش نمایش<i className="fa fa-angle-double-left"></i></Link>
               </div>
 
             </div>
@@ -177,7 +176,7 @@ const Samples = () => {
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
                 </p>
 
-                <Link to="/samples/2">دیدن پیش نمایش نمونه کار<i className="fa fa-angle-double-left"></i></Link>
+                <Link to="/samples/2">پیش نمایش<i className="fa fa-angle-double-left"></i></Link>
               </div>
 
             </div>
