@@ -19,7 +19,7 @@
 .samples-slider {
     width: 100%;
     height: 500px;
-    padding: 20px;
+    padding: 80px 20px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -29,22 +29,22 @@
 
 .sample-slider-btn {
     width: 95%;
-    height: 80px;
+    height: auto;
     position: absolute;
-    z-index: 10;
     padding: 10px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .sample-slider-btn button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: var(--blue-color);
     color: #fff;
@@ -73,8 +73,8 @@
 }
 
 .samples-slide {
-    width: 350px;
-    height: 400px;
+    /* width: 350px;
+    height: 400px; */
     background-color: var(--sec-background);
     border-radius: 30px;
 
@@ -86,7 +86,11 @@
 }
 
 .samples-slide:hover {
-    transform: translateY(-20px);
+    box-shadow: 0 14px 28px rgba(86, 85, 85, 0.25), 0 10px 10px rgba(71, 59, 59, 0.22);
+}
+
+.samples-slide:hover .sample-slide-title .sample-img-box img{
+    transform: scale(1.2);
 }
 
 .sample-slide-title {
@@ -111,6 +115,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    overflow: hidden;
+    transition: all 0.4s;
 }
 
 .sample-slide-description {

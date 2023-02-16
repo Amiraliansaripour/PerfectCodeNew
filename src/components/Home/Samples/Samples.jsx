@@ -2,8 +2,7 @@ import React,{useRef} from 'react'
 import { Link } from 'react-router-dom'
 import './Samples.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Controller } from 'swiper';
-import { useSwiper } from 'swiper/react';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/virtual';
