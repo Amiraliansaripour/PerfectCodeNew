@@ -97,7 +97,7 @@ section {
   width: 90%;
 }
 
-.content p {
+.content p , strong{
   color: #7e8699;
   width: 100%;
   direction: rtl;
