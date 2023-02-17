@@ -105,3 +105,10 @@ section {
   font-size: 20px;
 
 }
+.line{
+  width: 60%;
+  border-bottom: 1px rgb(87, 86, 86) solid;
+  margin: 5% 0;
+  display: flex ;
+  align-self: flex-end;
+}
