@@ -53,6 +53,25 @@
         gap: 100px;
 
     }
+
+    /* Our Team  */
+    .ourTeam {
+        margin-top: 25% !important;
+    }
+    /* about Team */
+    .aboutTeam{
+        margin-top: 25% !important;
+    } 
+    /* our project */
+    .our-project{
+        margin-top: 25% !important;
+    }
+
+    /* our project */
+    .our-project-bg-img{
+        background-position: 0px 0px, 0px 0px, 50% 50% !important;
+        height: 300px !important;
+    }
 }
 
 @media only screen and (max-width: 768px) {}
