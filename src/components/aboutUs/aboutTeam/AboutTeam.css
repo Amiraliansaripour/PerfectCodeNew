@@ -1,4 +1,8 @@
-.aboutIcon{
+.aboutTeam {
+    margin-top: 10%;
+}
+
+.aboutIcon {
     width: 60px !important;
     height: 60px !important;
     background-color: #1649FF;
@@ -8,6 +12,7 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+
 .aboutTeam p {
     font-size: 17px;
 }
