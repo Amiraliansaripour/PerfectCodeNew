@@ -44,14 +44,14 @@
         text-align: start;
     }
 
-    .our-project-number > div {
+    .our-project-number>div {
         margin-right: 0 !important;
     }
 
     .our-project-number {
         align-self: center !important;
         gap: 100px;
-        
+
     }
 }
 

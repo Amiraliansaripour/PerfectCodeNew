@@ -1,6 +1,8 @@
 import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
+import '../../Responsive.css'
 import './Navbar.css'
+
 const Navbar = () => {
     const navRef = useRef()
     const resMenu = () => {

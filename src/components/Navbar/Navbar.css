@@ -1,36 +1,30 @@
-
 /* List Style */
 .header-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    color: #fff;
-    padding: 20px 0;
-    position: relative;
-  }
-  
-  .links ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row-reverse;
-    gap: 25px;
-    list-style: none;
-    font-size: 18px;
-    z-index: 20;
-  }
-  
-  
-  /* List Style */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+}
 
-  
-  /* Hamburger Menu */
-  
+.links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 25px;
+  list-style: none;
+  font-size: 18px;
+  z-index: 20;
+}
+/* List Style */
+
+
+/* Hamburger Menu */
+
 .hamburger {
-  position: absolute;
-  top: 25%;
-  right: 10%;
   z-index: 10;
   display: none;
 }
@@ -50,19 +44,23 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 768px) {
 
+  /* navbar */
   .hamburger {
     display: block;
   }
+
   .close {
     display: block;
   }
+
   .header-list {
     height: auto;
     z-index: 50;
     position: relative;
   }
+
   .links ul {
     position: fixed;
     top: 0;
@@ -86,5 +84,4 @@
   .contact-btn {
     display: none;
   }
-
-} 
+}
