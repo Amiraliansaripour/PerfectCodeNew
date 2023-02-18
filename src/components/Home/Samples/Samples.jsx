@@ -11,19 +11,23 @@ const Samples = () => {
   const swiperRef = useRef();
 
   const sliderSettings = {
-    200:{
+    576:{
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    440: {
+    768: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    680: {
+    992: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    1024: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1400: {
       slidesPerView: 4,
       spaceBetween: 20,
     },
@@ -42,7 +46,6 @@ const Samples = () => {
         </div>
         <Swiper
           spaceBetween={10}
-          slidesPerView={3}
           breakpoints={sliderSettings}
           pagination={{ clickable: true }}
           onBeforeInit={(swiper) => {
