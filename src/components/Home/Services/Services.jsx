@@ -1,8 +1,12 @@
 import React from 'react'
 import './Services.css'
+import { useParallax } from 'react-scroll-parallax';
 const Services = () => {
+    const parallax = useParallax({
+        speed: 20,
+    });
     return (
-        <div className="services">
+        <div className="services" ref={parallax.ref}>
             <div className="services-title">
                 <div>
                     <h2>خدمات پرفکت کد</h2>

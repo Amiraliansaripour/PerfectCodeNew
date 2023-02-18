@@ -3,10 +3,12 @@ import './App.css';
 import './Responsive.css'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import routes from './Routes';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 function App() {
   return (
+    <ParallaxProvider>
     <div className="App">
       <Router>
         <Routes>
@@ -16,6 +18,8 @@ function App() {
         </Routes>
       </Router>
     </div>
+    </ParallaxProvider>
+
   );
 }
 
