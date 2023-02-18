@@ -77,7 +77,7 @@ const OurTeam = () => {
                         </div>
                     </div>
                     <div className='box box-1 p-5'>
-                        <img src="../assets/stylingImage/about-us/people.svg" alt="" width='100' height='100' />
+                        <img src="../assets/stylingImage/about-us/domanloo.jpg" alt="" width='100' height='100' />
                         <h2 className='mt-3'>مهدی دومانلو</h2>
                         <p>برنامه نویس بک اند و فرانت</p>
                         <div className='ourTeamsocial d-flex align-items-center justify-content-evenly'>

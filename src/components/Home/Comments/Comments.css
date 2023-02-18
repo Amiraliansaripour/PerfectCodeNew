@@ -23,7 +23,7 @@
     height: 265px;
     background-color: var(--sec-background);
     border-radius: 30px;
-    border: #fff 2px solid ;
+    border: #fff 2px solid;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -35,7 +35,7 @@
     width: 100%;
     height: auto;
     position: absolute;
-    
+
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -69,7 +69,7 @@
 
 @media only screen and (max-width: 568px) {
     .comment-slider-btn {
-        top:50%;
+        top: 50%;
     }
 
     .comment-slider-btn button {
@@ -83,34 +83,34 @@
 }
 
 
-.comment-slide  .comment-slide-title {
+.comment-slide .comment-slide-title {
     width: 100%;
     height: 35%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 25px 15px;
 }
 
 .comment-slide-title .comment-profile {
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
 .comment-slide-title .comment-profile .comment-img {
-  width: 64px;
-  height: 64px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  overflow: hidden;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .comment-slide-title .comment-profile .comment-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .comment-slide-title .comment-profile .comment-profile-name {
@@ -123,20 +123,24 @@
     direction: rtl;
 }
 
-.comment-slide-title .comment-profile .comment-profile-name a{
+.comment-slide-title .comment-profile .comment-profile-name a {
     direction: ltr;
 }
 
-.comment-slide-title .comment-instagram i{
-  font-size: 25px;
+.comment-slide-title .comment-instagram i {
+    font-size: 25px;
 }
-.comment-slide  .comment-slide-decription {
+
+.comment-slide .comment-slide-decription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 65%;
     padding: 20px;
     text-align: right;
 }
 
-.comment-slide  .comment-slide-decription p{
- color: #a6aab3;
+.comment-slide .comment-slide-decription p {
+    color: #a6aab3;
 }

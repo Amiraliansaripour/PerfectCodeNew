@@ -11,24 +11,28 @@ const Samples = () => {
   const swiperRef = useRef();
 
   const sliderSettings = {
-    576: {
+    200: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
+    576: {
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+    },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1.5,
       spaceBetween: 20,
     },
     992: {
-      slidesPerView: 2,
+      slidesPerView: 2.2,
       spaceBetween: 20,
     },
     1200: {
-      slidesPerView: 3,
+      slidesPerView: 3.1,
       spaceBetween: 20,
     },
     1400: {
-      slidesPerView: 3,
+      slidesPerView: 3.5,
       spaceBetween: 20,
     },
   };
@@ -48,7 +52,6 @@ const Samples = () => {
           spaceBetween={10}
           breakpoints={sliderSettings}
           pagination={{ clickable: true }}
-          dir={'rtl'}
           onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
           }}

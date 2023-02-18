@@ -11,28 +11,28 @@ const Comments = () => {
     // slider seting 
     const sliderSettings = {
         200: {
-            slidesPerView: 1,
+            slidesPerView: 1.2,
             spaceBetween: 20,
         },
-        440: {
-            slidesPerView: 1,
+        576: {
+            slidesPerView: 1.2,
             spaceBetween: 20,
         },
-        680: {
-            slidesPerView: 2,
-            spaceBetween: 50,
+        768: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
         },
-        980: {
+        992: {
             slidesPerView: 2.5,
             spaceBetween: 50,
         },
-        1100: {
-            slidesPerView: 3,
-            spaceBetween: 20,
+        1200: {
+            slidesPerView: 2.5,
+            spaceBetween: 50,
         },
-        1224: {
-            slidesPerView: 3,
-            spaceBetween: 30,
+        1400: {
+            slidesPerView: 3.5,
+            spaceBetween: 20,
         },
     };
     return (
@@ -59,7 +59,7 @@ const Comments = () => {
                     <SwiperSlide>
                         <div className="comment-slide">
 
-                            <div className="comment-slide-title">
+                            <div className="comment-slide-title mt-3">
                                 <div className="comment-profile">
                                     <div className="comment-img">
                                         <img src="https://images.squarespace-cdn.com/content/v1/59e5d996dc2b4a72ea60c9dc/1554833988306-SBDKETYLJ70WFCNJ2IZB/850_9556.jpg?format=1500w" alt="" />
@@ -90,7 +90,7 @@ const Comments = () => {
                     <SwiperSlide>
                         <div className="comment-slide">
 
-                            <div className="comment-slide-title">
+                            <div className="comment-slide-title mt-3">
                                 <div className="comment-profile">
                                     <div className="comment-img">
                                         <img src="https://www.cakeresume.com/cdn-cgi/image/fit=scale-down,format=auto,w=1200/https://images.cakeresume.com/images/d96d3ad3-4de2-478a-b157-7c4c507c88e6.jpeg" alt="" />
@@ -122,7 +122,7 @@ const Comments = () => {
                     <SwiperSlide>
                         <div className="comment-slide">
 
-                            <div className="comment-slide-title">
+                            <div className="comment-slide-title mt-3">
                                 <div className="comment-profile">
                                     <div className="comment-img">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJIa47XuBnkGRMjeSogf01T0NSZCUU_PQqGQ&usqp=CAU" alt="" />
@@ -153,7 +153,7 @@ const Comments = () => {
                     <SwiperSlide>
                         <div className="comment-slide">
 
-                            <div className="comment-slide-title">
+                            <div className="comment-slide-title mt-3">
                                 <div className="comment-profile">
                                     <div className="comment-img">
                                         <img src="https://rommenphotography.com/wp-content/uploads/2012/04/Corporate-Portrait-CV-headshot_zakelijke_portretfoto.jpg" alt="" />
