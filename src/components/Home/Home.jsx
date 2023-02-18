@@ -5,6 +5,7 @@ import Services from './Services/Services'
 import Social from './Social/Social'
 import Samples from './Samples/Samples'
 import Footer from '../Footer/Footer'
+import FullBanner from '../FullBanner/FullBanner'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
     <Services />
     <Guide />
     <Samples />
+    <FullBanner />
     <Footer/>
     </>
   )
