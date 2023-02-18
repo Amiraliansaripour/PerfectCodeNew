@@ -23,15 +23,15 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="content-image">
-                    <img src="../assets/stylingImage/wave-img.png" alt="" className="img-back" />
-                    <img src="../assets/stylingImage/mobile1.png" alt="" className="mobile-img" />
-                    <img src="../assets/stylingImage/mosalas.png" alt="" className="obgect-img coin" />
-                    <img src="../assets/stylingImage/circle.png" alt="" className="obgect-img3 coin" />
-                    <img src="../assets/stylingImage/marpich.png" alt="" className="obgect-img2 coin" />
-                    <img src="../assets/stylingImage/3dmokab.png" alt="" className="obgect-img1 coin" />
-                    <img src="../assets/stylingImage/545.png" alt="" className="obgect-img4 coin" />
-                    <img src="../assets/stylingImage/react.png" alt="" className="obgect-img5 coin" />
-                    <img src="../assets/stylingImage/django.png" alt="" className="obgect-img6 coin" />
+                    <img src="../assets/img/wave-img.png" alt="" className="img-back" />
+                    <img src="../assets/img/mobile1.png" alt="" className="mobile-img" />
+                    <img src="../assets/img/mosalas.png" alt="" className="obgect-img coin" />
+                    <img src="../assets/img/circle.png" alt="" className="obgect-img3 coin" />
+                    <img src="../assets/img/marpich.png" alt="" className="obgect-img2 coin" />
+                    <img src="../assets/img/3dmokab.png" alt="" className="obgect-img1 coin" />
+                    <img src="../assets/img/545.png" alt="" className="obgect-img4 coin" />
+                    <img src="../assets/img/react.png" alt="" className="obgect-img5 coin" />
+                    <img src="../assets/img/django.png" alt="" className="obgect-img6 coin" />
                 </div>
             </div>
         </div>

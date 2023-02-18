@@ -6,7 +6,7 @@ const Guide = () => {
       <h2>نحوه ثبت سفارش</h2>
       <div className="guide-section">
         <div className="guide-img">
-          <img src="../assets/stylingImage/login.png" alt="" />
+          <img src="../assets/img/login.png" alt="" />
         </div>
 
         <div className="guide-text">
