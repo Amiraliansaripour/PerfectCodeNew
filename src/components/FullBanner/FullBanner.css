@@ -18,7 +18,9 @@
     background-color: #1649ff;
     background-image: url("https://assets.website-files.com/61772ea4a9789e72c321a4f0/617c34dd6aeb1323effdda7c_cta-pattern-right-defi-x-template.svg");
     background-position: 100% 100%;
-    background-size: auto 100%;
+    /* background-size: auto 100%; */
+    background-size: cover; 
+
     background-repeat: no-repeat;
 }
 

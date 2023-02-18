@@ -6,6 +6,7 @@ import Social from './Social/Social'
 import Samples from './Samples/Samples'
 import Footer from '../Footer/Footer'
 import FullBanner from '../FullBanner/FullBanner'
+import Comments from './Comments/Comments'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
     <Guide />
     <Samples />
     <FullBanner />
+    <Comments />
     <Footer/>
     </>
   )

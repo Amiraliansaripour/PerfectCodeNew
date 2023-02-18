@@ -1,0 +1,142 @@
+.comments {
+    width: 100%;
+    height: 500px;
+    padding: 80px 15px 20px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.comment-slider {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* gap: 20px; */
+    position: relative;
+}
+
+.comment-slide {
+    /* width: 400px; */
+    height: 265px;
+    background-color: var(--sec-background);
+    border-radius: 30px;
+    border: #fff 2px solid ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.comment-slider-btn {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+
+.comment-slider-btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    color: #fff;
+    border: 0;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.comment-slider-btn button:hover {
+    opacity: 1;
+}
+
+.comment-slider-btn button i {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 568px) {
+    .comment-slider-btn {
+        top:50%;
+    }
+
+    .comment-slider-btn button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .comment-slider-btn button i {
+        font-size: 20px;
+    }
+}
+
+
+.comment-slide  .comment-slide-title {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.comment-slide-title .comment-profile {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.comment-slide-title .comment-profile .comment-img {
+  width: 64px;
+  height: 64px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.comment-slide-title .comment-profile .comment-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comment-slide-title .comment-profile .comment-profile-name {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    line-height: 10px;
+    flex-direction: column;
+    text-align: right;
+    direction: rtl;
+}
+
+.comment-slide-title .comment-profile .comment-profile-name a{
+    direction: ltr;
+}
+
+.comment-slide-title .comment-instagram i{
+  font-size: 25px;
+}
+.comment-slide  .comment-slide-decription {
+    width: 100%;
+    height: 65%;
+    padding: 20px;
+    text-align: right;
+}
+
+.comment-slide  .comment-slide-decription p{
+ color: #a6aab3;
+}

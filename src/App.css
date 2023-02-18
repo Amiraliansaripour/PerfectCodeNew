@@ -138,3 +138,9 @@ section {
   display: flex ;
   align-self: flex-end;
 }
+
+.flex-column{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
