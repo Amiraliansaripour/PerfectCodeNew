@@ -23,7 +23,7 @@
     height: 265px;
     background-color: var(--sec-background);
     border-radius: 30px;
-    border: #fff 2px solid ;
+    /* border: #fff 2px solid ; */
     display: flex;
     align-items: center;
     flex-direction: column;

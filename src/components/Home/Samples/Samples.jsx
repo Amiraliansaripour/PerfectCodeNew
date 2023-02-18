@@ -48,7 +48,6 @@ const Samples = () => {
           spaceBetween={10}
           breakpoints={sliderSettings}
           pagination={{ clickable: true }}
-          dir={'rtl'}
           onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
           }}
