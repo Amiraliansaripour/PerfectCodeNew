@@ -40,11 +40,37 @@ a:hover {
   background-color: #1649ff;
 }
 
+
 .btn-active:hover {
   color: #fff;
   background-color: #7e8699;
 }
 
+.with-active {
+  padding: 15px;
+  border-radius: 10px;
+  color: #1649ff;
+  background-color: #fff;
+}
+
+.with-active:hover{
+  border: 1.5px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
+.transparent-btn{
+  padding: 15px;
+  border-radius: 10px;
+  border: 1.5px solid #fff;
+  color: #fff;
+  background-color: #8aa0f251;
+}
+
+.transparent-btn:hover{
+  color: #fff;
+  background-color: #1648ff47;
+}
 .btn-hover {
   padding: 15px;
   border-radius: 10px;
