@@ -15,11 +15,11 @@ const Comments = () => {
             spaceBetween: 20,
         },
         440: {
-            slidesPerView: 1.5,
+            slidesPerView: 1,
             spaceBetween: 20,
         },
         680: {
-            slidesPerView: 2.5,
+            slidesPerView: 2,
             spaceBetween: 50,
         },
         980: {
