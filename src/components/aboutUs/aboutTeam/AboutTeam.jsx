@@ -1,11 +1,12 @@
 import React from 'react'
 import './AboutTeam.css'
+
 const AboutTeam = () => {
     return (
-        <section className='ourTeam row content d-flex justify-content-center align-items-center flex-row m-auto'>
-            <div className='col-12 col-md-5 d-flex flex-column gap-5 mb-5'>
+        <section className='aboutTeam row content d-flex flex-md-row flex-sm-column-reverse justify-content-center align-items-center flex-row m-auto'>
+            <div className='col-12 col-md-5 d-flex flex-column gap-5 mb-5 '>
                 <div className='gap-3 d-flex flex-row-reverse d-flex justify-content-center align-items-center'>
-                    <div className='ourTeamIcon d-flex justify-content-center align-items-center mb-3'>
+                    <div className='aboutIcon d-flex justify-content-center align-items-center mb-3'>
                         <i className='fa fa-trash fs-4'></i>
                     </div>
                     <div className='d-flex flex-column align-items-end'>
@@ -14,7 +15,7 @@ const AboutTeam = () => {
                     </div>
                 </div>
                 <div className='gap-3 d-flex flex-row-reverse d-flex justify-content-center align-items-center'>
-                    <div className='ourTeamIcon d-flex justify-content-center align-items-center mb-3'>
+                    <div className='aboutIcon d-flex justify-content-center align-items-center mb-3'>
                         <i className='fa fa-trash fs-4'></i>
                     </div>
                     <div className='d-flex flex-column align-items-end'>
@@ -23,7 +24,7 @@ const AboutTeam = () => {
                     </div>
                 </div>
                 <div className='gap-3 d-flex flex-row-reverse d-flex justify-content-center align-items-center'>
-                    <div className='ourTeamIcon d-flex justify-content-center align-items-center mb-3'>
+                    <div className='aboutIcon d-flex justify-content-center align-items-center mb-3'>
                         <i className='fa fa-trash fs-4'></i>
                     </div>
                     <div className='d-flex flex-column align-items-end'>

@@ -6,38 +6,23 @@ const Footer = () => {
       className="text-center text-lg-start text-white"
       style={{ backgroundColor: "#141A2A", borderTop: "1px solid #9499A6" }}
     >
-      <div className="container  p-4 pb-0">
-        <section>
+      <div className="container p-4 pb-0">
+        <section className="">
           <div className="row">
-             {/* 1 */}
-             <div className="text-center col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 className="text-right text-uppercase mb-4 font-weight-bold ">پل های ارتباطی</h6>
-              <p><i className="fa fa-envelope mr-3 "></i> perfectcode@gmail.com</p>
-              <p><i className="fa fa-phone mr-3"></i> + 0912 222 5555</p>
-              <p><i className="fa fa-print mr-3"></i> + 0912 800 9000</p>
-            </div>
-            
-
-            <hr className="w-100 clearfix d-md-none" />
-             {/* 2 */}
-             <div className="text-center col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              {/* <h6 className="text-uppercase mb-4 font-weight-bold">
-              Useful links
-            </h6> */}
+            <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 className="text-uppercase mb-4 font-weight-bold">
+                پرفکت کد
+              </h6>
               <p>
-                <a className="text-white">اعضای پرفکت</a>
-              </p>
-              <p>
-                <a className="text-white">نمونه کار های ما</a>
-              </p>
-              <p>
-                <a className="text-white">نظرات کاربران</a>
+                Here you can use rows and columns to organize your footer
+                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
               </p>
             </div>
 
             <hr className="w-100 clearfix d-md-none" />
-            {/* 3 */}
-            <div className="text-center col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 text-right">
+
+            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
               {/* <h6 className="text-uppercase mb-4 font-weight-bold">Products</h6> */}
               <p>
                 <a className="text-white">صفحه اصلی</a>
@@ -54,16 +39,29 @@ const Footer = () => {
             </div>
 
             <hr className="w-100 clearfix d-md-none" />
-           {/* 4 */}
-           <div className="text-center col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 className="text-center text-uppercase mb-4 font-weight-bold">
-                پرفکت کد
-              </h6>
+
+            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              {/* <h6 className="text-uppercase mb-4 font-weight-bold">
+              Useful links
+            </h6> */}
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                <a className="text-white">اعضای پرفکت</a>
               </p>
+              <p>
+                <a className="text-white">نمونه کار های ما</a>
+              </p>
+              <p>
+                <a className="text-white">نظرات کاربران</a>
+              </p>
+            </div>
+
+            <hr className="w-100 clearfix d-md-none" />
+
+            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 className="text-uppercase mb-4 font-weight-bold">پل های ارتباطی</h6>
+              <p><i className="fa fa-envelope mr-3"></i> perfectcode@gmail.com</p>
+              <p><i className="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p><i className="fa fa-print mr-3"></i> + 01 234 567 89</p>
             </div>
           </div>
         </section>
@@ -74,9 +72,9 @@ const Footer = () => {
           <div className="row d-flex align-items-center">
             <div className="col-md-7 col-lg-8 text-center text-md-start">
               <div className="p-3">
-                © 2022 Copyright :
+                © 2020 Copyright:
                 <a className="text-white" href="https://perfectcode.ir/"
-                > perfectcode.ir</a>
+                >perfectcode.ir</a>
               </div>
             </div>
 
