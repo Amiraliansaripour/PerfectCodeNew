@@ -1,4 +1,4 @@
-import React,{useRef} from 'react'
+import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import './Samples.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,20 +11,24 @@ const Samples = () => {
   const swiperRef = useRef();
 
   const sliderSettings = {
-    200:{
+    576: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    440: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    680: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    1024: {
-      slidesPerView: 4,
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1400: {
+      slidesPerView: 3,
       spaceBetween: 20,
     },
   };
@@ -42,13 +46,13 @@ const Samples = () => {
         </div>
         <Swiper
           spaceBetween={10}
-          slidesPerView={3}
           breakpoints={sliderSettings}
           pagination={{ clickable: true }}
+          dir={'rtl'}
           onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
           }}
-          >
+        >
           {/* Item */}
           <SwiperSlide>
             <div className="samples-slide">
