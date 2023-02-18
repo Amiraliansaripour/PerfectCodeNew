@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './FullBanner.css'
+import { useParallax } from 'react-scroll-parallax';
 const FullBanner = () => {
+    const parallax = useParallax({
+        speed: 20,
+    });
     return (
-        <section className="fullbanner-con">
+        <section className="fullbanner-con" ref={parallax.ref}>
             <div className="fullbanner">
                 <div className="banner-title">
                     <h2>کسب و کارتو آنلاین کن</h2>

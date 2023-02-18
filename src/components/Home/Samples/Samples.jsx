@@ -6,10 +6,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/virtual';
+import { useParallax } from 'react-scroll-parallax';
 
 const Samples = () => {
   const swiperRef = useRef();
-
+  const parallax = useParallax({
+    speed: 20,
+  });
   const sliderSettings = {
     200: {
       slidesPerView: 1,
@@ -37,7 +40,7 @@ const Samples = () => {
     },
   };
   return (
-    <section className="samples">
+    <section className="samples" ref={parallax.ref}>
       <div className="sample-title">
         <h2>نمونه کار ها</h2>
         <Link to="/samples" className="btn-active">دیدن همه نمونه کارها</Link>

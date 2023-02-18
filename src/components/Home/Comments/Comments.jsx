@@ -1,11 +1,21 @@
-import React, { useRef } from 'react'
+import React, { useContext, useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './Comments.css'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/virtual';
+import { useParallax } from 'react-scroll-parallax';
+import { BgBlur } from '../../provider/ParallaxFooter';
 
 const Comments = () => {
+
+
+    const [parallaxFooter, setParallaxFooter] = useContext(BgBlur)
+
+    const parallax = useParallax({
+        speed: 0,
+    });
+
     const swiperRef = useRef()
 
     // slider seting 
@@ -36,7 +46,7 @@ const Comments = () => {
         },
     };
     return (
-        <section className="comments">
+        <section className="comments" ref={parallax.ref} style={{ filter: parallaxFooter ? 'blur(10px)' : 'blur(0)' }}>
             <h2>نظرات کسب و کار ها</h2>
 
             <div className="comment-slider">
@@ -80,13 +90,13 @@ const Comments = () => {
                             </div>
 
                             <div className="comment-slide-decription">
-                                    <p>این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود</p>
+                                <p>این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود</p>
                             </div>
 
                         </div>
                     </SwiperSlide>
 
-                    
+
                     <SwiperSlide>
                         <div className="comment-slide">
 
@@ -111,14 +121,14 @@ const Comments = () => {
                             </div>
 
                             <div className="comment-slide-decription">
-                                    <p>این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود</p>
+                                <p>این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود</p>
                             </div>
 
                         </div>
                     </SwiperSlide>
 
 
-                    
+
                     <SwiperSlide>
                         <div className="comment-slide">
 
@@ -143,13 +153,13 @@ const Comments = () => {
                             </div>
 
                             <div className="comment-slide-decription">
-                                    <p>این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود</p>
+                                <p>این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود</p>
                             </div>
 
                         </div>
                     </SwiperSlide>
 
-                    
+
                     <SwiperSlide>
                         <div className="comment-slide">
 
@@ -174,13 +184,13 @@ const Comments = () => {
                             </div>
 
                             <div className="comment-slide-decription">
-                                    <p>این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود</p>
+                                <p>این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود</p>
                             </div>
 
                         </div>
                     </SwiperSlide>
 
-                
+
                 </Swiper>
             </div>
         </section>
