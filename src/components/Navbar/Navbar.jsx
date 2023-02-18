@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="header-list">
 
             <div className="logo">
-                <img src="../assets/stylingImage/logo/logo.png" alt="پرفکت کد" width='60' height='60' />
+                <img src="../assets/img/logo/logo.png" alt="پرفکت کد" width='60' height='60' />
             </div>
             <div className="links">
                 <ul ref={navRef}>
