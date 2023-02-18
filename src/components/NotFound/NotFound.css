@@ -1,0 +1,37 @@
+.notfound{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    color: #fff;
+}
+
+.notfound h1{
+    font-size: 9em;
+}
+
+
+.coins {
+  position: absolute;
+  width: 80px;
+}
+
+.obgects-img{
+    top: 3%;
+    left: 10%;
+}
+.obgects-img1{
+    top: 80%;
+    left: 10%;
+}
+.obgects-img2{
+    top: 5%;
+    right: 10%;
+}
+.obgects-img3{
+    top: 75%;
+    right: 10%;
+}
