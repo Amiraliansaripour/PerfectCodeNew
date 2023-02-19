@@ -1,10 +1,14 @@
 .blog {
-    padding: 10% 0;
+    padding-top: 10% ;
 }
 
 .blog-post-desc {
     padding: 45px 32px;
     background-color: var(--sec-background);
+}
+
+.blog-post-desc strong{
+    line-height: 45px;
 }
 
 .blog-post-body img {
@@ -23,12 +27,10 @@
     -o-border-radius: 0 0 45px 45px;
 }
 
-.search-box {
-
-}
 .content h1 {
     width: 100%;
 }
+
 .mini-blog-item img {
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -36,6 +38,8 @@
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+
 strong {
     text-align: right;
+    line-height: 30px;
 }
