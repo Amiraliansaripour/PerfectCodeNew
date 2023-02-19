@@ -3,7 +3,7 @@ import './Services.css'
 import { useParallax } from 'react-scroll-parallax';
 const Services = () => {
     const parallax = useParallax({
-        speed: 20,
+        speed: 10,
     });
     return (
         <div className="services" ref={parallax.ref}>

@@ -11,7 +11,7 @@ import { useParallax } from 'react-scroll-parallax';
 const Samples = () => {
   const swiperRef = useRef();
   const parallax = useParallax({
-    speed: 20,
+    speed: 0,
   });
   const sliderSettings = {
     200: {

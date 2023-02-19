@@ -4,7 +4,7 @@ import './FullBanner.css'
 import { useParallax } from 'react-scroll-parallax';
 const FullBanner = () => {
     const parallax = useParallax({
-        speed: 20,
+        speed: 10,
     });
     return (
         <section className="fullbanner-con" ref={parallax.ref}>

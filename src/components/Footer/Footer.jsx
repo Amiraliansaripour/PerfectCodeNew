@@ -1,16 +1,27 @@
 import React, { useContext } from 'react'
-import { Parallax } from 'react-scroll-parallax';
+import { Parallax, useParallax } from 'react-scroll-parallax';
 import { BgBlur } from '../provider/ParallaxFooter';
 
 const Footer = () => {
   const [parallaxFooter, setParallaxFooter] = useContext(BgBlur)
+  const parallax = useParallax({
+    speed: 30,
+  });
+  const parallax1 = useParallax({
+    speed: 7,
+  });
+  
+  const parallax2 = useParallax({
+    speed: 7,
+  });
   return (
     <Parallax onProgressChange={(progress) => setParallaxFooter(progress >= 0.253540166780227 ? true : false)} onExit={() => setParallaxFooter(false)}>
       <footer
         className="text-center text-lg-start text-white"
-        style={{ backgroundColor: "#141A2A", borderTop: "1px solid #9499A6" }}
+        style={{ backgroundColor: "#1D263B" }}
+        ref={parallax.ref}
       >
-        <div className="container p-4 pb-0" >
+        <div className="container p-4 pb-0" ref={parallax1.ref}>
           <section>
             <div className="row">
               {/* 1 */}
@@ -72,9 +83,8 @@ const Footer = () => {
             </div>
           </section>
 
-          <hr className="my-3" />
 
-          <section className="p-3 pt-0">
+          <section className="p-3 pt-0" ref={parallax2.ref}>
             <div className="row d-flex align-items-center">
               <div className="col-md-7 col-lg-8 text-center text-md-start">
                 <div className="p-3">
@@ -118,7 +128,7 @@ const Footer = () => {
           {/* <!-- Section: Copyright --> */}
         </div>
       </footer>
-    </Parallax>
+    </Parallax >
   )
 }
 
