@@ -2,7 +2,9 @@ import React from 'react'
 
 const LastestPost = () => {
   return (
-    <div>LastestPost</div>
+    <section className='content header lastest-post'>
+      LastestPost
+    </section>
   )
 }
 
