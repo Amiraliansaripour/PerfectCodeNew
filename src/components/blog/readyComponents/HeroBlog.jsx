@@ -9,7 +9,7 @@ const HeroBlog = ({ img, alt, date, addedTime, desc }) => {
                     <p><i className='fa fa-calendar' /> {date}</p>
                     <p><i className='fa fa-clock-o' /> {addedTime}</p>
                 </div>
-                <strong className='h2 text-light'>{desc}</strong>
+                <p className='blog-title text-light'>{desc}</p>
             </div>
         </div>
     )

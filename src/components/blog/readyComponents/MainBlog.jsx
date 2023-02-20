@@ -12,7 +12,7 @@ const MainBlog = ({ img, id, alt, date, addedTime, desc }) => {
                         <p><i className='fa fa-calendar' /> {date}</p>
                         <p><i className='fa fa-clock-o' /> {addedTime}</p>
                     </div>
-                    <strong className='h2 text-light'>{desc}</strong>
+                    <p className='blog-title text-light'>{desc}</p>
                     <div className='mt-4 d-flex flex-row-reverse justify-content-start gap-3'>
                         <Link to={`/blog/id=${id}&title=${desc}`}>
                             <button className='btn-active'>

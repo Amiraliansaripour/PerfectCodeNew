@@ -38,8 +38,9 @@
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
-
-strong {
+.blog-title {
     text-align: right;
-    line-height: 30px;
+    font-size: 22px !important;
+    line-height: 33px;
+    text-align: right !important;
 }
