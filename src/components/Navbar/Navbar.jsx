@@ -20,6 +20,7 @@ const Navbar = () => {
                     <li><Link to="/team">تیم پرفکت</Link></li>
                     <li><Link to="/about">درباره ما</Link></li>
                     <li><Link to="/contact">تماس باما</Link></li>
+                    <li><Link to="/blog">بلاگ ها</Link></li>
                     <li className='close' onClick={resMenu}>
                         <i className='fa fa-remove'></i>
                     </li>
