@@ -33,6 +33,11 @@ a:hover {
   color: #515B72;
 }
 
+input , textarea ,label{
+  text-align: right;
+}
+
+
 .btn-active {
   padding: 15px;
   border-radius: 10px;

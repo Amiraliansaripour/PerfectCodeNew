@@ -7,6 +7,7 @@ import Samples from './Samples/Samples'
 import Footer from '../Footer/Footer'
 import FullBanner from '../FullBanner/FullBanner'
 import Comments from './Comments/Comments'
+import OrderForm from './OrderForm/OrderForm'
 
 const Home = () => {
   return (
@@ -14,7 +15,8 @@ const Home = () => {
     <Hero />
     <Social />
     <Services />
-    <Guide />
+    <OrderForm />
+    {/* <Guide /> */}
     <Samples />
     <FullBanner />
     <Comments />

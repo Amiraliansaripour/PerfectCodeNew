@@ -1,0 +1,109 @@
+.contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.contact-form {
+    height: auto;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 50px;
+    color: #fff;
+}
+
+.order-form {
+    width: 50%;
+    text-align: right;
+    padding: 35px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-form form {
+    width: 90%;
+    height: 100%;
+    background-color: var(--sec-background);
+    padding: 30px 35px;
+    border-radius: 20px;
+}
+
+.order-form form div {
+    margin-top: 15px;
+}
+
+.order-form form input {
+    color: #fff;
+    background-color: #2d364c;
+}
+
+.order-form form input:focus {
+    color: #fff;
+    background-color: #2d364c;
+}
+
+.order-form form textarea {
+    color: #fff;
+    background-color: #2d364c;
+}
+
+.order-form form textarea:focus {
+    color: #fff;
+    background-color: #2d364c;
+}
+
+.cantact-details {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 25px;
+    text-align: right;
+    padding: 10px;
+}
+
+.cantact-details p {
+    width: 80%;
+    font-size: 18px;
+    color: var(--sec-color);
+}
+
+
+@media only screen and (max-width: 992px) {
+    .contact-form {
+        flex-direction: column-reverse;
+    }
+
+    .order-form{
+        width: 90%;
+        /* background-color: red; */
+    }
+
+    .cantact-details{
+        text-align: right;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-form{
+        padding: 15px;
+    }
+
+    .order-form{
+        width: 100%;
+        padding: 35px 5px;
+    }
+}
