@@ -2,7 +2,7 @@ import Tooltip from 'rc-tooltip'
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-const MainBlog = ({ img, alt, date, addedTime, desc }) => {
+const MainBlog = ({ img, id, alt, date, addedTime, desc }) => {
     return (
         <div className='col-10 col-xl-5 col-lg-6 mx-lg-auto blog-post mx-auto'>
             <div className='blog-post-body mt-5'>
@@ -14,7 +14,7 @@ const MainBlog = ({ img, alt, date, addedTime, desc }) => {
                     </div>
                     <strong className='h2 text-light'>{desc}</strong>
                     <div className='mt-4 d-flex flex-row-reverse justify-content-start gap-3'>
-                        <Link to='/'>
+                        <Link to={`/blog/id=${id}&title=${desc}`}>
                             <button className='btn-active'>
                                 مطالعه بیشتر
                             </button>
