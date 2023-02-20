@@ -3,8 +3,8 @@ import './Guide.css'
 import { useParallax } from 'react-scroll-parallax';
 const Guide = () => {
   const parallax = useParallax({
-    speed: -10,
-});
+    speed: 20,
+  });
   return (
     <div className="guide" ref={parallax.ref}>
       <h2>نحوه ثبت سفارش</h2>

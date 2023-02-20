@@ -7,7 +7,7 @@ import './Hero.css';
 
 const Hero = () => {
     const parallax = useParallax({
-        speed: -20,
+        speed: -10,
     });
     const parallax1 = useParallax({
         speed: -1,

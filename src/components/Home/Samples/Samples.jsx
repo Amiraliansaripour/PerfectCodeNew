@@ -6,10 +6,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/virtual';
+import { useParallax } from 'react-scroll-parallax';
+import SampleBox from './readyComponent/SampleBox';
 
 const Samples = () => {
   const swiperRef = useRef();
-
+  const parallax = useParallax({
+    speed: 15,
+  });
   const sliderSettings = {
     200: {
       slidesPerView: 1,
@@ -37,8 +41,8 @@ const Samples = () => {
     },
   };
   return (
-    <section className="samples">
-      <div className="sample-title">
+    <section className="samples" ref={parallax.ref}>
+      <div className="sample-title mb-5">
         <h2>نمونه کار ها</h2>
         <Link to="/samples" className="btn-active">دیدن همه نمونه کارها</Link>
       </div>
@@ -56,138 +60,24 @@ const Samples = () => {
             swiperRef.current = swiper;
           }}
         >
-          {/* Item */}
-          <SwiperSlide>
-            <div className="samples-slide">
-
-              <div className="sample-slide-title">
-                <div className="sample-img-box">
-                  <Link to="/samples/2">
-                    <img src="../assets/sites/arsha.png" alt="" />
-                  </Link>
-                </div>
-
-                <div className="sample-slide-name">
-                  <Link to="/samples/2"><h3>سایت شرکت آرشا</h3> </Link>
-                  <p>شرکتی</p>
-                </div>
-              </div>
-              <div className="sample-slide-description">
-                <p>
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                </p>
-
-                <Link to="/samples/2">پیش نمایش<i className="fa fa-angle-double-left"></i></Link>
-              </div>
-
-            </div>
+          <SwiperSlide >
+            <SampleBox img='../assets/sites/arsha.png' name='سایت شرکت آرشا' categories='شرکتی' desc='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است' link='/samples/2' />
           </SwiperSlide>
 
-          {/* Item */}
-          <SwiperSlide>
-            <div className="samples-slide">
-
-              <div className="sample-slide-title">
-                <div className="sample-img-box">
-                  <Link to="/samples/2">
-                    <img src="../assets/sites/arsha.png" alt="" />
-                  </Link>
-                </div>
-
-                <div className="sample-slide-name">
-                  <Link to="/samples/2"><h3>سایت شرکت آرشا</h3> </Link>
-                  <p>شرکتی</p>
-                </div>
-              </div>
-              <div className="sample-slide-description">
-                <p>
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                </p>
-
-                <Link to="/samples/2">پیش نمایش<i className="fa fa-angle-double-left"></i></Link>
-              </div>
-
-            </div>
+          <SwiperSlide >
+            <SampleBox img='../assets/sites/arsha.png' name='سایت شرکت آرشا' categories='شرکتی' desc='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است' link='/samples/2' />
           </SwiperSlide>
-          {/* Item */}
-          <SwiperSlide>
-            <div className="samples-slide">
 
-              <div className="sample-slide-title">
-                <div className="sample-img-box">
-                  <Link to="/samples/2">
-                    <img src="../assets/sites/arsha.png" alt="" />
-                  </Link>
-                </div>
-
-                <div className="sample-slide-name">
-                  <Link to="/samples/2"><h3>سایت شرکت آرشا</h3> </Link>
-                  <p>شرکتی</p>
-                </div>
-              </div>
-              <div className="sample-slide-description">
-                <p>
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                </p>
-
-                <Link to="/samples/2">پیش نمایش<i className="fa fa-angle-double-left"></i></Link>
-              </div>
-
-            </div>
+          <SwiperSlide >
+            <SampleBox img='../assets/sites/arsha.png' name='سایت شرکت آرشا' categories='شرکتی' desc='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است' link='/samples/2' />
           </SwiperSlide>
-          {/* Item */}
-          <SwiperSlide>
-            <div className="samples-slide">
 
-              <div className="sample-slide-title">
-                <div className="sample-img-box">
-                  <Link to="/samples/2">
-                    <img src="../assets/sites/arsha.png" alt="" />
-                  </Link>
-                </div>
-
-                <div className="sample-slide-name">
-                  <Link to="/samples/2"><h3>سایت شرکت آرشا</h3> </Link>
-                  <p>شرکتی</p>
-                </div>
-              </div>
-              <div className="sample-slide-description">
-                <p>
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                </p>
-
-                <Link to="/samples/2">پیش نمایش<i className="fa fa-angle-double-left"></i></Link>
-              </div>
-
-            </div>
-
+          <SwiperSlide >
+            <SampleBox img='../assets/sites/arsha.png' name='سایت شرکت آرشا' categories='شرکتی' desc='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است' link='/samples/2' />
           </SwiperSlide>
-          {/* Item */}
-          <SwiperSlide>
-            <div className="samples-slide">
 
-              <div className="sample-slide-title">
-                <div className="sample-img-box">
-                  <Link to="/samples/2">
-                    <img src="../assets/sites/arsha.png" alt="" />
-                  </Link>
-                </div>
-
-                <div className="sample-slide-name">
-                  <Link to="/samples/2"><h3>سایت شرکت آرشا</h3> </Link>
-                  <p>شرکتی</p>
-                </div>
-              </div>
-              <div className="sample-slide-description">
-                <p>
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                </p>
-
-                <Link to="/samples/2">پیش نمایش<i className="fa fa-angle-double-left"></i></Link>
-              </div>
-
-            </div>
-
+          <SwiperSlide >
+            <SampleBox img='../assets/sites/arsha.png' name='سایت شرکت آرشا' categories='شرکتی' desc='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است' link='/samples/2' />
           </SwiperSlide>
         </Swiper>
       </div>

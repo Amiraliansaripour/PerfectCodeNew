@@ -1,11 +1,22 @@
-import React, { useRef } from 'react'
+import React, { useContext, useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './Comments.css'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/virtual';
+import { useParallax } from 'react-scroll-parallax';
+import { BgBlur } from '../../provider/ParallaxFooter';
+import CommentBox from './raedyComponent/CommentBox';
 
 const Comments = () => {
+
+
+    const [parallaxFooter, setParallaxFooter] = useContext(BgBlur)
+
+    const parallax = useParallax({
+        speed: 0,
+    });
+
     const swiperRef = useRef()
 
     // slider seting 
@@ -36,7 +47,7 @@ const Comments = () => {
         },
     };
     return (
-        <section className="comments">
+        <section className="comments" ref={parallax.ref} style={{ filter: parallaxFooter ? 'blur(4px)' : 'blur(0)' }}>
             <h2>نظرات کسب و کار ها</h2>
 
             <div className="comment-slider">
@@ -55,132 +66,18 @@ const Comments = () => {
                         swiperRef.current = swiper;
                     }}
                 >
-
                     <SwiperSlide>
-                        <div className="comment-slide">
-
-                            <div className="comment-slide-title mt-3">
-                                <div className="comment-profile">
-                                    <div className="comment-img">
-                                        <img src="https://images.squarespace-cdn.com/content/v1/59e5d996dc2b4a72ea60c9dc/1554833988306-SBDKETYLJ70WFCNJ2IZB/850_9556.jpg?format=1500w" alt="" />
-                                    </div>
-                                    <div className="comment-profile-name">
-                                        <p>محمد رضا عاشوری</p>
-                                        <a href="https://instagram/mohammadreza.com">@mohammadreza</a>
-                                    </div>
-                                </div>
-
-                                <div className="comment-instagram">
-                                    <a href="">
-                                        <i className="fa fa-instagram"></i>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-                            <div className="comment-slide-decription">
-                                    <p>این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود</p>
-                            </div>
-
-                        </div>
+                        <CommentBox img='https://images.squarespace-cdn.com/content/v1/59e5d996dc2b4a72ea60c9dc/1554833988306-SBDKETYLJ70WFCNJ2IZB/850_9556.jpg?format=1500w' tagLink='https://instagram/mohammadreza.com' name='محمد رضا عاشوری' tagName='@mohammadreza' desc='این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود' />
                     </SwiperSlide>
-
-                    
                     <SwiperSlide>
-                        <div className="comment-slide">
-
-                            <div className="comment-slide-title mt-3">
-                                <div className="comment-profile">
-                                    <div className="comment-img">
-                                        <img src="https://www.cakeresume.com/cdn-cgi/image/fit=scale-down,format=auto,w=1200/https://images.cakeresume.com/images/d96d3ad3-4de2-478a-b157-7c4c507c88e6.jpeg" alt="" />
-                                    </div>
-                                    <div className="comment-profile-name">
-                                        <p>علی قربانی</p>
-                                        <a href="https://instagram/mohammadreza.com">@mohammadreza</a>
-                                    </div>
-                                </div>
-
-                                <div className="comment-instagram">
-                                    <a href="">
-                                        <i className="fa fa-instagram"></i>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-                            <div className="comment-slide-decription">
-                                    <p>این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود</p>
-                            </div>
-
-                        </div>
+                        <CommentBox img='https://www.cakeresume.com/cdn-cgi/image/fit=scale-down,format=auto,w=1200/https://images.cakeresume.com/images/d96d3ad3-4de2-478a-b157-7c4c507c88e6.jpeg' tagLink='https://instagram/mohammadreza.com' name='علی قربانی' tagName='@mohammadreza' desc='این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود' />
                     </SwiperSlide>
-
-
-                    
                     <SwiperSlide>
-                        <div className="comment-slide">
-
-                            <div className="comment-slide-title mt-3">
-                                <div className="comment-profile">
-                                    <div className="comment-img">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJIa47XuBnkGRMjeSogf01T0NSZCUU_PQqGQ&usqp=CAU" alt="" />
-                                    </div>
-                                    <div className="comment-profile-name">
-                                        <p>رضا شریفی</p>
-                                        <a href="https://instagram/mohammadreza.com">@mohammadreza</a>
-                                    </div>
-                                </div>
-
-                                <div className="comment-instagram">
-                                    <a href="">
-                                        <i className="fa fa-instagram"></i>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-                            <div className="comment-slide-decription">
-                                    <p>این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود</p>
-                            </div>
-
-                        </div>
+                        <CommentBox img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJIa47XuBnkGRMjeSogf01T0NSZCUU_PQqGQ&usqp=CAU' tagLink='https://instagram/mohammadreza.com' name='رضا شریفی' tagName='@mohammadreza' desc='این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود' />
                     </SwiperSlide>
-
-                    
                     <SwiperSlide>
-                        <div className="comment-slide">
-
-                            <div className="comment-slide-title mt-3">
-                                <div className="comment-profile">
-                                    <div className="comment-img">
-                                        <img src="https://rommenphotography.com/wp-content/uploads/2012/04/Corporate-Portrait-CV-headshot_zakelijke_portretfoto.jpg" alt="" />
-                                    </div>
-                                    <div className="comment-profile-name">
-                                        <p>محمد رضا عاشوری</p>
-                                        <a href="https://instagram/mohammadreza.com">@mohammadreza</a>
-                                    </div>
-                                </div>
-
-                                <div className="comment-instagram">
-                                    <a href="">
-                                        <i className="fa fa-instagram"></i>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-                            <div className="comment-slide-decription">
-                                    <p>این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود</p>
-                            </div>
-
-                        </div>
+                        <CommentBox img='https://rommenphotography.com/wp-content/uploads/2012/04/Corporate-Portrait-CV-headshot_zakelijke_portretfoto.jpg' name='محمد رضا عاشوری' tagName='@mohammadreza' desc='این یک متن نمونه برای تست استایل نظر کاربر برای سایت استارتاپ پرفکت کد میباشد و همینطور دوباره این متن برای بیشتر نشون دادن این متن هست که درباره پرفکت کد تعریف میشود' />
                     </SwiperSlide>
-
-                
                 </Swiper>
             </div>
         </section>

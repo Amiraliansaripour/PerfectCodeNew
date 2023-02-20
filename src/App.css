@@ -1,6 +1,6 @@
 :root {
   --light-color: #fff;
-  --sec-color:#9499A6;
+  --sec-color: #9499A6;
   --background: #141A2A;
   --sec-background: #1D263B;
   --blue-color: #1649FF;
@@ -25,7 +25,12 @@ a {
   font-family: 'Vazirmatn', sans-serif;
   direction: rtl;
 }
-p,h1,h2,h3,strong{
+
+p,
+h1,
+h2,
+h3,
+strong {
   direction: rtl;
 }
 
@@ -38,6 +43,17 @@ input , textarea ,label{
 }
 
 
+/* btn */
+button {
+  outline: none;
+  border: none;
+  transition: .2s linear;
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  -ms-transition: .2s linear;
+  -o-transition: .2s linear;
+}
+
 .btn-active {
   padding: 15px;
   border-radius: 10px;
@@ -49,6 +65,11 @@ input , textarea ,label{
 .btn-active:hover {
   color: #fff;
   background-color: #7e8699;
+  transition: .2s linear;
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  -ms-transition: .2s linear;
+  -o-transition: .2s linear;
 }
 
 .with-active {
@@ -58,13 +79,13 @@ input , textarea ,label{
   background-color: #fff;
 }
 
-.with-active:hover{
+.with-active:hover {
   border: 1.5px solid #fff;
   color: #fff;
   background-color: transparent;
 }
 
-.transparent-btn{
+.transparent-btn {
   padding: 15px;
   border-radius: 10px;
   border: 1.5px solid #fff;
@@ -72,10 +93,11 @@ input , textarea ,label{
   background-color: #8aa0f251;
 }
 
-.transparent-btn:hover{
+.transparent-btn:hover {
   color: #fff;
   background-color: #1648ff47;
 }
+
 .btn-hover {
   padding: 15px;
   border-radius: 10px;
@@ -128,7 +150,8 @@ section {
   width: 90%;
 }
 
-.content p , strong{
+.content p,
+strong {
   color: #7e8699;
   width: 100%;
   direction: rtl;
@@ -136,16 +159,21 @@ section {
   font-size: 20px;
 
 }
-.line{
+
+.line {
   width: 60%;
   border-bottom: 1px rgb(87, 86, 86) solid;
   margin: 5% 0;
-  display: flex ;
+  display: flex;
   align-self: flex-end;
 }
 
-.flex-column{
+.flex-column {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.tooltip{
+  padding: 10px;
 }
