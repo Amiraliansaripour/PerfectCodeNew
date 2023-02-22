@@ -38,7 +38,9 @@ a:hover {
   color: #515B72;
 }
 
-input , textarea ,label{
+input,
+textarea,
+label {
   text-align: right;
 }
 
@@ -160,6 +162,13 @@ strong {
 
 }
 
+p,
+strong {
+  color: #7e8699;
+  direction: rtl;
+  font-size: 20px;
+}
+
 .line {
   width: 60%;
   border-bottom: 1px rgb(87, 86, 86) solid;
@@ -174,6 +183,6 @@ strong {
   flex-direction: column;
 }
 
-.tooltip{
+.tooltip {
   padding: 10px;
 }

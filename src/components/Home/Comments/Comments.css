@@ -7,7 +7,10 @@
     flex-direction: column;
     color: #fff;
 }
-
+.comments h2{
+    width: 100%;
+    padding: 0 86px;
+}
 .comment-slider {
     width: 95%;
     height: 90%;
