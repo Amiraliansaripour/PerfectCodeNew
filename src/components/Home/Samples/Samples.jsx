@@ -47,7 +47,7 @@ const Samples = () => {
         <Link to="/samples" className="btn-active">دیدن همه نمونه کارها</Link>
       </div>
 
-      <div className="samples-slider">
+      <div className="samples-slider mt-5">
         <div className="sample-slider-btn">
           <button className="next" onClick={() => swiperRef.current?.slideNext()}><i className="fa fa-angle-right"></i></button>
           <button className="prev" onClick={() => swiperRef.current?.slidePrev()}><i className="fa fa-angle-left"></i></button>
