@@ -7,10 +7,12 @@
     flex-direction: column;
     color: #fff;
 }
-.comments h2{
+
+.comments h2 {
     width: 100%;
     padding: 0 86px;
 }
+
 .comment-slider {
     width: 95%;
     height: 90%;
@@ -122,6 +124,10 @@
     flex-direction: column;
     text-align: right;
     direction: rtl;
+}
+
+.comment-profile-name p{
+    font-size: 14px;
 }
 
 .comment-slide-title .comment-profile .comment-profile-name a {
