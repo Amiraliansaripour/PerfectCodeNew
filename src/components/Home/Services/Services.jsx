@@ -1,6 +1,7 @@
 import React from 'react'
 import './Services.css'
 import { useParallax } from 'react-scroll-parallax';
+import ServiceBox from './readyComponent/ServiceBox';
 const Services = () => {
     const parallax = useParallax({
         speed: 10,
@@ -19,62 +20,13 @@ const Services = () => {
             </div>
 
             <div className="services-grid">
-                <div className="row box gap-5 justify-content-center">
-                    <div className="col-12 col-lg-3 col-md-5">
-                        <div className="icon-box">
-                            <i className="fa fa-anchor"></i>
-                        </div>
-                        <h3>برند سازی</h3>
-                        <p>
-                            برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند
-                        </p>
-                    </div>
-                    <div className="col-12 col-lg-3 col-md-5">
-                        <div className="icon-box">
-                            <i className="fa fa-anchor"></i>
-                        </div>
-                        <h3>برند سازی</h3>
-                        <p>
-                            برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند
-                        </p>
-                    </div>
-                    <div className="col-12 col-lg-3 col-md-5">
-                        <div className="icon-box">
-                            <i className="fa fa-anchor"></i>
-                        </div>
-                        <h3>برند سازی</h3>
-                        <p>
-                            برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند
-                        </p>
-                    </div>
-
-                    <div className="col-12 col-lg-3 col-md-5">
-                        <div className="icon-box">
-                            <i className="fa fa-anchor"></i>
-                        </div>
-                        <h3>برند سازی</h3>
-                        <p>
-                            برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند
-                        </p>
-                    </div>
-                    <div className="col-12 col-lg-3 col-md-5">
-                        <div className="icon-box">
-                            <i className="fa fa-anchor"></i>
-                        </div>
-                        <h3>برند سازی</h3>
-                        <p>
-                            برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند
-                        </p>
-                    </div>
-                    <div className="col-12 col-lg-3 col-md-5">
-                        <div className="icon-box">
-                            <i className="fa fa-anchor"></i>
-                        </div>
-                        <h3>برند سازی</h3>
-                        <p>
-                            برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند
-                        </p>
-                    </div>
+                <div className="row box gap-5 justify-content-center mx-3 m-md-0">
+                    <ServiceBox title='برند سازی' icon='fa fa-anchor' desc='برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند' />
+                    <ServiceBox title='برند سازی' icon='fa fa-anchor' desc='برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند' />
+                    <ServiceBox title='برند سازی' icon='fa fa-anchor' desc='برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند' />
+                    <ServiceBox title='برند سازی' icon='fa fa-anchor' desc='برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند' />
+                    <ServiceBox title='برند سازی' icon='fa fa-anchor' desc='برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند' />
+                    <ServiceBox title='برند سازی' icon='fa fa-anchor' desc='برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند' />
                 </div>
             </div>
         </div>
