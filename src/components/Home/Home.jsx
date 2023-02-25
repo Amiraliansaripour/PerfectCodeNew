@@ -20,7 +20,6 @@ const Home = () => {
     <Samples />
     <FullBanner />
     <Comments />
-    <Footer/>
     </>
   )
 }
