@@ -2,7 +2,7 @@ import React from 'react'
 import './OrderForm.css'
 const OrderForm = () => {
     return (
-        <section className="contact">
+        <section className="order-containar">
             <h2 className='text-end w-100 mb-lg-0 mb-5'>ثبت اولیه سفارش</h2>
             <section className="contact-form">
                 <div className="order-form">

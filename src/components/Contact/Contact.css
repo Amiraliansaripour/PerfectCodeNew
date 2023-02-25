@@ -96,7 +96,7 @@
 }
 
 
-.contact-social-icons{
+.contact-social{
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -104,7 +104,7 @@
     color: #fff;
 }
 
-.contact-social-icons a i{
+.contact-social a i{
     font-size: 25px;
     background-color: #1649ff;
     color: #fff;

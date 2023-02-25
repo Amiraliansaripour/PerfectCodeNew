@@ -34,7 +34,7 @@ const Contact = () => {
                     <i className="fa fa-instagram"></i> <a>ارتباط در اینستاگرام</a>
                 </div>
 
-                <div className="contact-social-icons">
+                <div className="contact-social">
                     <a href="">
                         <i className="fa fa-instagram"></i>
                     </a>
