@@ -20,7 +20,7 @@ const Contact = () => {
                         <label for="desc">توضیحات</label>
                         <textarea className="form-control mt-3" id="desc" placeholder="...  سایتی فروشگاهی با امکانات"></textarea>
                     </div>
-                    <button>ارسال</button>
+                    <button className="btn-active">ارسال</button>
                 </form>
             </div>
 
