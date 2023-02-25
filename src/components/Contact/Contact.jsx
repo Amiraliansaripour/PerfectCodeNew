@@ -38,6 +38,18 @@ const Contact = () => {
                     <a href="">
                         <i className="fa fa-instagram"></i>
                     </a>
+
+                    <a href="">
+                        <i className="fa fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i className="fa fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i className="fa fa-instagram"></i>
+                    </a>
                 </div>
             </div>
         </section>

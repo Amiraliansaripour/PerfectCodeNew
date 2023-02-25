@@ -1,9 +1,9 @@
-.contact{
+.contact {
     color: #fff;
     padding: 80px 20px;
     display: flex;
     flex-direction: row;
-    align-items: center;   
+    align-items: center;
 }
 
 .order-form-box {
@@ -24,7 +24,7 @@
     border-radius: 20px;
 }
 
-.order-form-box form button{
+.order-form-box form button {
     margin-top: 26px;
     padding: 15px 30px;
     border-radius: 10px;
@@ -63,16 +63,16 @@
 
 
 
-.social-box{
+.social-box {
     width: 60%;
-    height: 500px;
+    height: auto;
     padding: 15px;
     text-align: right;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.contact-icon{
+.contact-icon {
     width: 100%;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@
     margin-top: 10px;
 }
 
-.contact-icon i{
+.contact-icon i {
     background-color: #1649ff;
     color: #fff;
     font-size: 25px;
@@ -90,29 +90,57 @@
     border-radius: 50%;
 }
 
-.contact-icon a{
+.contact-icon a {
     color: #fff;
     font-size: 20px;
 }
 
 
-.contact-social{
+.contact-social {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    padding: 15px 10px;
+    padding: 35px 0;
     color: #fff;
 }
 
-.contact-social a i{
-    font-size: 25px;
+.contact-social a {
+    margin-right: 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.contact-social a:hover {
     background-color: #1649ff;
+}
+
+.contact-social a i {
+    font-size: 16px;
     color: #fff;
     padding: 5px;
-    border-radius: 15px;
 }
 
 
+@media only screen and (max-width: 992px) {
+    .contact {
+        align-items: flex-end;
+        flex-direction: column-reverse;
+    }
 
+.order-form-box {
+    width: 100%;
+    align-items: flex-end;
+    padding: 0;
+}
 
+.order-form-box form{
+    width: 100%;
+}
 
+.social-box{
+    width: 100%;
+}
+
+}
