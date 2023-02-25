@@ -11,7 +11,7 @@ const FullBanner = () => {
             <div className="fullbanner">
                 <div className="banner-title">
                     <h2>کسب و کارتو آنلاین کن</h2>
-                    <p>کسب کارت نیاز به آنلاین شدن داره پس همین الان به کسب و کارت رونق بده</p>
+                    <p className='text-light mt-2'>کسب کارت نیاز به آنلاین شدن داره پس همین الان به کسب و کارت رونق بده</p>
                 </div>
                 <div className="banner-btn">
                     <Link to="/contact" className="with-active">ثبت سفارش</Link>

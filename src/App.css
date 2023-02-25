@@ -35,7 +35,7 @@ strong {
 }
 
 a:hover {
-  color: #515B72;
+  color: #9da0a7;
 }
 
 input,
@@ -166,7 +166,7 @@ p,
 strong {
   color: #7e8699;
   direction: rtl;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .line {
