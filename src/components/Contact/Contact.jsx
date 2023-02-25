@@ -55,8 +55,9 @@ const Contact = () => {
                 </div>
             </section>
 
-         {/* Faq section */}
+            {/* Faq section */}
             <Faq />
+            {/* Faq section */}
 
         </>
     )

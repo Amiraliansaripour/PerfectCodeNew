@@ -3,13 +3,14 @@ import './Faq.css'
 
 import Accordion from 'react-bootstrap/Accordion';
 const Faq = () => {
+
     return (
         <section className="faq">
             <h2>پرسش های متداول</h2>
 
             <div className="faq-container">
                 <div className="faq-box">
-                    <Accordion defaultActiveKey="0">
+                    <Accordion>
                         <Accordion.Item eventKey="0" className="faq-item">
                             <Accordion.Header>چرا پرفکت کد ؟</Accordion.Header>
                             <Accordion.Body>
@@ -65,6 +66,7 @@ const Faq = () => {
             </div>
         </section>
     )
+    
 }
 
 export default Faq
