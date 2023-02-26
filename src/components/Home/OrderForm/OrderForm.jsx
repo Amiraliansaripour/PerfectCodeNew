@@ -13,7 +13,7 @@ const OrderForm = () => {
             </div>
             <section className="contact-form w-100">
                 <div className="order-form">
-                    <form className='w-md-75 w-75'>
+                    <form className='w-100 mx-3'>
                         <div className="form-group custom-form">
                             <label for="name">* نام</label>
                             <input type="text" className="form-control mt-3" id="name" placeholder="" />

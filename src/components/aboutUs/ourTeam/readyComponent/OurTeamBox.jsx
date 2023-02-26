@@ -12,7 +12,7 @@ const OurTeamBox = ({ name, identity, img, telegram, phone, github }) => {
                 <Tooltip placement="bottom" trigger={['hover']} overlay={<span>پیام در تلگرام</span>}>
                     <a href={`https://telegram.me/${telegram}`} target='_blank' className="btn-floating m-1" role="button">
                         <div className='ourTeamsocialItem d-flex justify-content-center align-items-center'>
-                            <i className="fa fa-telegram"></i>
+                            <i className="fa-brands fa-telegram"></i>
                         </div>
                     </a>
                 </Tooltip>
@@ -26,7 +26,7 @@ const OurTeamBox = ({ name, identity, img, telegram, phone, github }) => {
                 <Tooltip placement="bottom" trigger={['hover']} overlay={<span>مشاهده گیت هاب</span>}>
                 <a href={`https://github.com/${github}`} target='_blank' className="btn-floating m-1" role="button">
                     <div className='ourTeamsocialItem d-flex justify-content-center align-items-center'>
-                        <i className="fa fa-github"></i>
+                        <i className="fa-brands fa-github"></i>
                     </div>
                 </a>
                 </Tooltip>

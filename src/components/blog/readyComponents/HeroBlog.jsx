@@ -6,8 +6,8 @@ const HeroBlog = ({ img, alt, date, addedTime, desc }) => {
             <img src={img} className='img-fluid' alt={alt} />
             <div className='blog-post-desc'>
                 <div className='blog-post-time d-flex text-start mb-3'>
-                    <p><i className='fa fa-calendar' /> {date}</p>
-                    <p><i className='fa fa-clock-o' /> {addedTime}</p>
+                    <p><i className='fa-regular fa-calendar' /> {date}</p>
+                    <p><i className='fa-regular fa-clock' /> {addedTime}</p>
                 </div>
                 <p className='blog-title text-light'>{desc}</p>
             </div>
