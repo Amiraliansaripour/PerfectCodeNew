@@ -82,7 +82,7 @@ button {
 }
 
 .with-active:hover {
-  border: 1.5px solid #fff;
+  outline: 1.5px solid #fff;
   color: #fff;
   background-color: transparent;
 }
