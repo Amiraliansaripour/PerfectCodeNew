@@ -10,26 +10,28 @@ const Price = () => {
             </div>
             <div className='d-flex flex-column flex-wrap flex-lg-nowrap flex-md-row justify-content-evenly'>
                 <PriceBox bgColor='#1d263b'
-                    planName="لایت"
+                    planName="نقره ای"
                     btnColor="gray"
                     logo="../assets/img/mosalas.png"
                     price="18"
                     marginTop='mt-lg-5'
-
+                    text='پلن معمولی برای سایت های ساده و بیزینس های خانگی مناسب است'
                 />
                 <PriceBox bgColor='#1649FF'
-                    planName="پیشرفته"
+                    planName="طلایی"
                     btnColor="active"
                     logo="../assets/img/3dmokab.png"
                     price="25"
                     translateY='translateY(-84px)'
+                    text='پلن پیشرفته شامل تمامی تکنولوژی ها و استاندارد های روز دنیا میشود که مخصوص بیزینس های بزرگ و پیشرفته میشود'
                 />
                 <PriceBox bgColor='#1d263b'
-                    planName="استاندارد"
+                    planName="برنزی"
                     btnColor="gray"
                     logo="../assets/img/marpich.png"
                     price="16"
                     marginTop='mt-lg-5'
+                    text='پلن برنزی شامل بیزینس های نیمه بزرگ میشود که تمامی امکانات پلن نقره ای را داراست'
                 />
 
             </div>
