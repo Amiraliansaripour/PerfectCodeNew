@@ -1,7 +1,10 @@
 import AboutUs from "../components/aboutUs/AboutUs";
 import Helmet from 'react-helmet';
+import { useEffect } from "react";
 export default function AboutUsPage() {
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <>
             <Helmet>

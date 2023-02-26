@@ -1,8 +1,11 @@
 import Home from "../components/Home/Home";
 import Helmet from 'react-helmet';
+import { useEffect } from 'react';
 
 export default function HomePage() {
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <>
             <Helmet>
