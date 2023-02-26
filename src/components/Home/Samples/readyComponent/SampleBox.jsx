@@ -16,7 +16,7 @@ const SampleBox = ({ img, name, categories, desc, link }) => {
                     <h3 className='pe-2'>{name}</h3>
                     <p>{categories}</p>
                 </div>
-                <p>{desc}</p>
+                <p className='text-end'>{desc}</p>
                 <Link to={link} className='mt-3'>پیش نمایش<i className="fa fa-angle-double-left"></i></Link>
             </div>
         </div>
