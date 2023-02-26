@@ -47,7 +47,7 @@ const Comments = () => {
         },
     };
     return (
-        <section className="comments" ref={parallax.ref} style={{ filter: parallaxFooter ? 'blur(4px)' : 'blur(0)' }}>
+        <section className="comments" id='comments' ref={parallax.ref} style={{ filter: parallaxFooter ? 'blur(4px)' : 'blur(0)' }}>
             {/* <h2>نظرات کسب و کار ها</h2> */}
             <div className="comment-title d-flex justify-content-center justify-content-lg-between">
                 <div>

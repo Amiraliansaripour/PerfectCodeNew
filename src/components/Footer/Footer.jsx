@@ -2,6 +2,8 @@ import React, { useContext } from 'react'
 import { Parallax, useParallax } from 'react-scroll-parallax';
 import { BgBlur } from '../provider/ParallaxFooter';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+
 
 const Footer = () => {
   const [parallaxFooter, setParallaxFooter] = useContext(BgBlur)
@@ -15,6 +17,7 @@ const Footer = () => {
   const parallax2 = useParallax({
     speed: 7,
   });
+  
   return (
     <Parallax onProgressChange={(progress) => setParallaxFooter(progress >= 0.253540166780227 ? true : false)} onExit={() => setParallaxFooter(false)}>
       <footer
@@ -41,13 +44,14 @@ const Footer = () => {
               Useful links
             </h6> */}
                 <p>
-                  <Link to='/about' className="text-white">اعضای پرفکت</Link>
+                  <HashLink to={"/about#ourTeam"}>اعضای پرفکت</HashLink>
                 </p>
                 <p>
-                  <Link to='/sample' className="text-white">نمونه کار های ما</Link>
+                  <HashLink to={"/#samples"}>نمونه کار های ما</HashLink>
+
                 </p>
                 <p>
-                  <Link to='/home' className="text-white">نظرات کاربران</Link>
+                  <HashLink to={"/#comments"}>نظرات کاربران</HashLink>
                 </p>
               </div>
 
