@@ -2,7 +2,7 @@ import React from 'react'
 import './OrderForm.css'
 const OrderForm = () => {
     return (
-        <section className="contact">
+        <section className="order-containar">
             <h2 className='text-end w-100 mb-lg-0 mb-5'>ثبت اولیه سفارش</h2>
             <section className="contact-form">
                 <div className="order-form">
@@ -19,7 +19,7 @@ const OrderForm = () => {
                             <label for="desc">توضیحات</label>
                             <textarea className="form-control mt-3" id="desc" placeholder="...  سایتی فروشگاهی با امکانات"></textarea>
                         </div>
-                        <button>ارسال</button>
+                        <button className="btn-active">ارسال</button>
                     </form>
                 </div>
                 <div className="cantact-details">

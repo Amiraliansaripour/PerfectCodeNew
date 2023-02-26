@@ -1,0 +1,146 @@
+.contact {
+    color: #fff;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.order-form-box {
+    width: 60%;
+    text-align: right;
+    padding: 35px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-form-box form {
+    width: 90%;
+    height: 100%;
+    background-color: var(--sec-background);
+    padding: 30px 35px;
+    border-radius: 20px;
+}
+
+.order-form-box form button {
+    margin-top: 26px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #1649ff;
+}
+
+.order-form-box form div {
+    margin-top: 15px;
+}
+
+.order-form-box form input {
+    color: #fff;
+    background-color: #2d364c;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+}
+
+.order-form-box form input:focus {
+    color: #fff;
+    background-color: #2d364c;
+}
+
+.order-form-box form textarea {
+    color: #fff;
+    background-color: #2d364c;
+    outline: 0;
+    border: 0;
+}
+
+.order-form-box form textarea:focus {
+    color: #fff;
+    background-color: #2d364c;
+}
+
+
+
+.social-box {
+    width: 60%;
+    height: auto;
+    padding: 15px;
+    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: right;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.contact-icon i {
+    background-color: #1649ff;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.contact-icon a {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.contact-social {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 35px 0;
+    color: #fff;
+}
+
+.contact-social a {
+    margin-right: 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.contact-social a:hover {
+    background-color: #1649ff;
+}
+
+.contact-social a i {
+    font-size: 16px;
+    color: #fff;
+    padding: 5px;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .contact {
+        align-items: flex-end;
+        flex-direction: column-reverse;
+    }
+
+.order-form-box {
+    width: 100%;
+    align-items: flex-end;
+    padding: 0;
+}
+
+.order-form-box form{
+    width: 100%;
+}
+
+.social-box{
+    width: 100%;
+}
+
+}

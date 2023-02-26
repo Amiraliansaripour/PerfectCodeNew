@@ -14,7 +14,6 @@ const Hero = () => {
     });
     return (
         <div className="header">
-            <Navbar />
             <div className="header-content p-3" ref={parallax.ref} >
                 <div className="content">
                     <h1 className='mt-5 mt-lg-0'>

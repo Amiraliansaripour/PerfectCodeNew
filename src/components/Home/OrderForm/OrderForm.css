@@ -1,4 +1,4 @@
-.contact {
+.order-containar {
     width: 100%;
     height: auto;
     display: flex;
@@ -7,7 +7,7 @@
     color: #fff;
 }
 
-.contact>h2 {
+.order-containar>h2 {
     padding: 0 100px 0 0;
 }
 
