@@ -1,5 +1,5 @@
 .blog {
-    padding-top: 10% ;
+    padding-top: 10%;
 }
 
 .blog-post-desc {
@@ -7,7 +7,7 @@
     background-color: var(--sec-background);
 }
 
-.blog-post-desc strong{
+.blog-post-desc strong {
     line-height: 45px;
 }
 
@@ -38,9 +38,28 @@
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+
 .blog-title {
     text-align: right;
-    font-size: 22px !important;
+    font-size: 20px !important;
     line-height: 33px;
     text-align: right !important;
+}
+
+@media screen and (max-width: 768px) {
+
+    .blog-post-time p {
+        font-size: 15px;
+    }
+
+    .blog-title {
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 526px) {
+
+    .blog-post-time {
+        flex-direction: column;
+    }
 }
