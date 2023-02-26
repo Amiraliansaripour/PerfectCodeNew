@@ -1,5 +1,6 @@
 import React from 'react'
 import './OurTeam.css'
+import OurTeamBox from './readyComponent/OurTeamBox'
 
 const OurTeam = () => {
     return (
@@ -10,94 +11,10 @@ const OurTeam = () => {
                     <strong>ما در تیم پرفکت قصد داریم با مجرب ترین افراد بیزینس شمارو به سمت و سوی دیگری ببریم با ما همراه باش</strong>
                 </div>
                 <div className='ourTeamBox d-flex justify-content-center flex-wrap gap-5 text-center'>
-                    <div className='box box-1 p-5'>
-                        <img src="../assets/img/about-us/people.svg" alt="" width='100' height='100' />
-                        <h2 className='mt-3'>مهدی دومانلو</h2>
-                        <p>برنامه نویس بک اند و فرانت</p>
-                        <div className='ourTeamsocial d-flex align-items-center justify-content-evenly'>
-                            <a className="btn-floating m-1" role="button">
-                                <div className='ourTeamsocialItem d-flex justify-content-center align-items-center'>
-                                    <i className="fa fa-instagram"></i>
-                                </div>
-                            </a>
-                            <a className="btn-floating m-1" role="button">
-                                <div className='ourTeamsocialItem d-flex justify-content-center align-items-center'>
-                                    <i className="fa fa-instagram"></i>
-                                </div>
-                            </a>
-                            <a className="btn-floating m-1" role="button">
-                                <div className='ourTeamsocialItem d-flex justify-content-center align-items-center'>
-                                    <i className="fa fa-instagram"></i>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div className='box box-1 p-5'>
-                        <img src="../assets/img/about-us/people.svg" alt="" width='100' height='100' />
-                        <h2 className='mt-3'>مهدی دومانلو</h2>
-                        <p>برنامه نویس بک اند و فرانت</p>
-                        <div className='ourTeamsocial d-flex align-items-center justify-content-evenly'>
-                            <a className="btn-floating m-1" role="button">
-                                <div className='ourTeamsocialItem d-flex justify-content-center align-items-center'>
-                                    <i className="fa fa-instagram"></i>
-                                </div>
-                            </a>
-                            <a className="btn-floating m-1" role="button">
-                                <div className='ourTeamsocialItem d-flex justify-content-center align-items-center'>
-                                    <i className="fa fa-instagram"></i>
-                                </div>
-                            </a>
-                            <a className="btn-floating m-1" role="button">
-                                <div className='ourTeamsocialItem d-flex justify-content-center align-items-center'>
-                                    <i className="fa fa-instagram"></i>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div className='box box-1 p-5'>
-                        <img src="../assets/img/about-us/people.svg" alt="" width='100' height='100' />
-                        <h2 className='mt-3'>مهدی دومانلو</h2>
-                        <p>برنامه نویس بک اند و فرانت</p>
-                        <div className='ourTeamsocial d-flex align-items-center justify-content-evenly'>
-                            <a className="btn-floating m-1" role="button">
-                                <div className='ourTeamsocialItem d-flex justify-content-center align-items-center'>
-                                    <i className="fa fa-instagram"></i>
-                                </div>
-                            </a>
-                            <a className="btn-floating m-1" role="button">
-                                <div className='ourTeamsocialItem d-flex justify-content-center align-items-center'>
-                                    <i className="fa fa-instagram"></i>
-                                </div>
-                            </a>
-                            <a className="btn-floating m-1" role="button">
-                                <div className='ourTeamsocialItem d-flex justify-content-center align-items-center'>
-                                    <i className="fa fa-instagram"></i>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div className='box box-1 p-5'>
-                        <img src="../assets/img/about-us/domanloo.jpg" alt="" width='100' height='100' />
-                        <h2 className='mt-3'>مهدی دومانلو</h2>
-                        <p>برنامه نویس بک اند و فرانت</p>
-                        <div className='ourTeamsocial d-flex align-items-center justify-content-evenly'>
-                            <a className="btn-floating m-1" role="button">
-                                <div className='ourTeamsocialItem d-flex justify-content-center align-items-center'>
-                                    <i className="fa fa-instagram"></i>
-                                </div>
-                            </a>
-                            <a className="btn-floating m-1" role="button">
-                                <div className='ourTeamsocialItem d-flex justify-content-center align-items-center'>
-                                    <i className="fa fa-instagram"></i>
-                                </div>
-                            </a>
-                            <a className="btn-floating m-1" role="button">
-                                <div className='ourTeamsocialItem d-flex justify-content-center align-items-center'>
-                                    <i className="fa fa-instagram"></i>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    <OurTeamBox name='مهدی دومانلو' identity='برنامه نویس بک اند و فرانت' img='../assets/img/about-us/domanloo.jpg'  telegram='mhdi_1254' github='mhdix' phone='09925438078'/>
+                    <OurTeamBox name='امیر علی انصاری پور' identity='برنامه نویس بک اند و فرانت' img='../assets/img/about-us/amirali.jpg' telegram='amiraliansaripor' github='Amiraliansaripour' phone='09102442108'/>
+                    <OurTeamBox name='امیرحسین ثقفی' identity='برنامه نویس بک اند و فرانت' img='../assets/img/about-us/saqafi.jpg' telegram='' github='' phone=''/>
+                    <OurTeamBox name='امیرحسین اصغری' identity='برنامه نویس بک اند و فرانت' img='../assets/img/about-us/asqari.jpg' telegram='' github='' phone=''/>
                 </div>
             </div>
         </section>
