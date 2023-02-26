@@ -60,25 +60,27 @@ const Samples = () => {
             swiperRef.current = swiper;
           }}
         >
+
           <SwiperSlide >
-            <SampleBox img='../assets/sites/arsha.png' name='سایت شرکت آرشا' categories='شرکتی' desc='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است' link='/samples/2' />
+            <SampleBox img='../assets/img/sample/shikopiik.png' name='قالب فروشگاهی شیکوپیک' categories='فروشگاهی' desc='این قالب فروشگاهی یکی از زیبا تری و جذاب ترین قالب ها برای فروشگاه آنلاین شما است' link='/samples/2' />
           </SwiperSlide>
 
           <SwiperSlide >
-            <SampleBox img='../assets/sites/arsha.png' name='سایت شرکت آرشا' categories='شرکتی' desc='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است' link='/samples/2' />
+            <SampleBox img='../assets/img/sample/arsha.png' name='قالب شرکت آرشا' categories='شرکتی' desc='قالب شرکتی ارشا یکی از بهترین قالب های حال حاظر که میتوانید همین الان برای شرکت خود تهیه کنید' link='/samples/2' />
           </SwiperSlide>
 
           <SwiperSlide >
-            <SampleBox img='../assets/sites/arsha.png' name='سایت شرکت آرشا' categories='شرکتی' desc='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است' link='/samples/2' />
+            <SampleBox img='../assets/img/sample/bicolorPortfolio.png' name='قالب رزومه ای' categories='رزومه' desc='قالب رزومه ای بیکو زیبا ترین قالب برای طراحی سایت رزومه ایه شما رزومه خود را حرفه ای کنید' link='/samples/2' />
           </SwiperSlide>
 
           <SwiperSlide >
-            <SampleBox img='../assets/sites/arsha.png' name='سایت شرکت آرشا' categories='شرکتی' desc='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است' link='/samples/2' />
+            <SampleBox img='../assets/img/sample/eduwell.png' name='قالب آموزشی ایجوول' categories='آموزشی' desc='قالب آموزشی ایجوول زیبا ترین و مطمعن ترین قالب برای سایت آموزشی شما' link='/samples/2' />
           </SwiperSlide>
 
           <SwiperSlide >
-            <SampleBox img='../assets/sites/arsha.png' name='سایت شرکت آرشا' categories='شرکتی' desc='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است' link='/samples/2' />
+            <SampleBox img='../assets/img/sample/fammsShop.png' name='قالب فروشگاهی فمس شاپ' categories='فروشگاهی' desc='قالب فمس شاپ یکی از زیبا تری قالب ها برای فروشگاه آنلاین شما' link='/samples/2' />
           </SwiperSlide>
+
         </Swiper>
       </div>
     </section>
