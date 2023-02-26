@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PriceBox from '../readyComponent/PriceBox'
 import './Price.css'
+import { BgBlur } from './../../provider/ParallaxFooter';
 const Price = () => {
+    const [parallaxFooter, setParallaxFooter] = useContext(BgBlur)
     return (
-        <section className='price container'>
+        <section className='price container' style={{ filter: parallaxFooter ? 'blur(4px)' : 'blur(0)' }}>
             <div className='content'>
                 <h1 className='d-flex justify-content-center'>قیمت طراحی سایت در پرفکت کد</h1>
                 <strong className='w-100 text-center mx-auto'>ما با استفاده از به کار گیری نیرو های جوان و خوش سلیقه توانسته ایم با کیفیت ترین سایت هارا در اختیار مشتریان خود قرار دهیم و هم اکنون میتوانید تعرفه طراحی سایت در سال 1401 را مشاهده کنید</strong>

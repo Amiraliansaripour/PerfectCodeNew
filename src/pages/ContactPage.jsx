@@ -1,6 +1,7 @@
 import Contact from "../components/Contact/Contact";
 import { Helmet } from 'react-helmet';
 import { useEffect } from 'react';
+import Faq from './../components/Faq/Faq';
 
 export default function ContactPage() {
     useEffect(() => {
@@ -14,6 +15,9 @@ export default function ContactPage() {
                 <link rel="canonical" href="https://perfectcode.ir/contact" />
             </Helmet>
             <Contact />
+            {/* Faq section */}
+            <Faq />
+            {/* Faq section */}
         </>
     )
 }

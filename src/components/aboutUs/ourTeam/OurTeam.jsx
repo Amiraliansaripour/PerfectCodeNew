@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './OurTeam.css'
 import OurTeamBox from './readyComponent/OurTeamBox'
+import { BgBlur } from './../../provider/ParallaxFooter';
 
 const OurTeam = () => {
+    const [parallaxFooter, setParallaxFooter] = useContext(BgBlur)
+
     return (
-        <section className='ourTeam row content d-flex justify-content-center align-items-center flex-row m-auto'>
+        <section className='ourTeam row content d-flex justify-content-center align-items-center flex-row m-auto' style={{ filter: parallaxFooter ? 'blur(4px)' : 'blur(0)' }}>
             <div className='col-12 d-flex flex-column gap-5 mb-5'>
                 <div className='text-center'>
                     <h2>درباره تیم ما</h2>

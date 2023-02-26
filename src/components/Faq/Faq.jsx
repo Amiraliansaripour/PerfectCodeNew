@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Faq.css'
 
 import Accordion from 'react-bootstrap/Accordion';
+import { BgBlur } from '../provider/ParallaxFooter';
 const Faq = () => {
-
+    const [parallaxFooter, setParallaxFooter] = useContext(BgBlur)
     return (
-        <section className="faq">
+        <section className="faq mb-5" style={{ filter: parallaxFooter ? 'blur(4px)' : 'blur(0)' }}>
             <h2>پرسش های متداول</h2>
 
             <div className="faq-container">

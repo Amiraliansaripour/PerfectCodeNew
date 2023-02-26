@@ -6,7 +6,6 @@ const Contact = () => {
     return (
         <>
             <section className="contact">
-
                 <div className="order-form-box">
                     <form>
                         <div className="form-group custom-form">
@@ -65,9 +64,6 @@ const Contact = () => {
                 </div>
             </section>
 
-            {/* Faq section */}
-            <Faq />
-            {/* Faq section */}
 
         </>
     )
