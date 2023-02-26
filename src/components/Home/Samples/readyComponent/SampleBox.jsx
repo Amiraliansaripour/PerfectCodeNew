@@ -1,5 +1,7 @@
+import Tooltip from 'rc-tooltip';
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { RWebShare } from "react-web-share";
 
 const SampleBox = ({ img, name, categories, desc, link }) => {
     return (
@@ -17,7 +19,22 @@ const SampleBox = ({ img, name, categories, desc, link }) => {
                     <p>{categories}</p>
                 </div>
                 <p className='text-end'>{desc}</p>
-                <Link to={link} className='mt-3'>پیش نمایش<i className="fa fa-angle-double-left"></i></Link>
+                <div className='w-100 mt-3 d-flex justify-content-between align-items-center'>
+                    <Link to={link} >پیش نمایش<i className="fa fa-angle-double-left"></i></Link>
+                    <RWebShare
+                        data={{
+                            text: "این یک نمونه کار از تیم پرفکت کد امیدوارم خوشتون بیاد",
+                            url: `https://perfectcode.ir/sample/${link}/index.html`,
+                            title: "Flamingos",
+                        }}
+                    >
+                        <div className='share-btn'>
+                            <Tooltip placement="bottom" trigger={['hover']} overlay={<span>اشتراک گذاری</span>}>
+                                <Link><i className='fa fa-share m-0'></i></Link>
+                            </Tooltip>
+                        </div>
+                    </RWebShare>
+                </div>
             </div>
         </div>
     )
