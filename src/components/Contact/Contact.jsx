@@ -26,32 +26,42 @@ const Contact = () => {
                 </div>
 
                 <div className="social-box">
-                    <h2>تماس با ما</h2>
-                    <p>ما در تیم پرفکت کد قصد داریم با بروز ترین امکانات موجود سایت شمارو طراحی کنیم و به کسب و کار شما رونق ببخشیم ، تیم خبره ما هر آنچیزی </p>
-                    <div className="contact-icon">
-                        <i className="fa fa-instagram"></i> <a>ارتباط در اینستاگرام</a>
+                    <div className="">
+                        <h2 className='mb-4'>با ما در ارتباط باشید</h2>
+                        <p>برای ثبت سفارش خود ، لطفا فقط با شماره های درج شده در سایت تماس بگیرید و یا فرم مربوط به ثبت سفارش را تکمیل کرده تا کارشناسان ما در اسرع وقت با شما تماس بگیرند.</p>
+                        <p>همچنین میتوانید با شماره <a href='tel:09925438078' style={{ color: "#1649FF" }}>09925438078</a> تماس حاصل فرمایید</p>
+                        <p>اولین سفارشت رو ثبت کن و از  20% تخفیف بهره مند شو<br /><span style={{ color: '#1649FF' }}> تیم ما همه جوره هواتو داره و نگران هیچ چیز نباش</span></p>
+
                     </div>
-                    <div className="contact-icon">
-                        <i className="fa fa-instagram"></i> <a>ارتباط در اینستاگرام</a>
+                    <div className="contact-icon mt-4">
+                        <a href='https://telegram.com/perfectcodeteam' target='_blank'  className='d-flex align-items-center gap-3'><i className="fa-brands fa-telegram"></i> ارتباط در تلگرام</a>
                     </div>
 
-                    <div className="contact-social">
-                        <a href="">
-                            <i className="fa fa-instagram"></i>
-                        </a>
-
-                        <a href="">
-                            <i className="fa fa-instagram"></i>
-                        </a>
-
-                        <a href="">
-                            <i className="fa fa-instagram"></i>
-                        </a>
-
-                        <a href="">
-                            <i className="fa fa-instagram"></i>
-                        </a>
+                    <div className="contact-icon mt-3">
+                        <a href='https://instagram.com/_u/perfectcode.ir'  target='_blank' className='d-flex align-items-center gap-3'><i className="fa-brands fa-instagram"></i> ارتباط در اینستا گرام</a>
                     </div>
+                    <div className="contact-icon mt-3">
+                        <a href='tel:09925438078' className='d-flex align-items-center gap-3'><i className="fa fa-phone"></i> برقراری تماس</a>
+                    </div>
+
+                    {/* <div className="contact-social">
+                        <p>با ما در ارتباط باشید : </p>
+                        <a href="tel:09925438078">
+                            <i className="fa fa-phone"></i>
+                        </a>
+
+                        <a target='_blank' href="https://instagram.com/_u/perfectcode.ir">
+                            <i className="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a target='_blank' href="https://github.com/">
+                            <i className="fa-brands fa-github"></i>
+                        </a>
+
+                        <a target='_blank' href="https://telegram.com/perfectcodeteam">
+                            <i className="fa-brands fa-telegram"></i>
+                        </a>
+                    </div> */}
                 </div>
             </section>
 
