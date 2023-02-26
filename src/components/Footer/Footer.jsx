@@ -17,9 +17,9 @@ const Footer = () => {
   const parallax2 = useParallax({
     speed: 7,
   });
-  
+
   return (
-    <Parallax onProgressChange={(progress) => setParallaxFooter(progress >= 0.253540166780227 ? true : false)} onExit={() => setParallaxFooter(false)}>
+    <Parallax onProgressChange={(progress) => setParallaxFooter(progress >= 0.353540166780227 ? true : false)} onExit={() => setParallaxFooter(false)}>
       <footer
         className="text-center text-lg-start text-white"
         style={{ backgroundColor: "#1D263B" }}
