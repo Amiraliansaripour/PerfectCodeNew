@@ -53,6 +53,9 @@ const Footer = () => {
                 <p>
                   <HashLink to={"/#comments"}>نظرات کاربران</HashLink>
                 </p>
+                <p>
+                  <HashLink to={"/contact#faq"}>سوالات متداول</HashLink>
+                </p>
               </div>
 
               <hr className="w-100 clearfix d-md-none" />
