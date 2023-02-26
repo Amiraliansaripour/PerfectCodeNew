@@ -23,8 +23,8 @@ const Hero = () => {
                         ما در تیم پرفکت کد قصد داریم با بروز ترین امکانات موجود سایت شمارو طراحی کنیم و به کسب و کار شما رونق ببخشیم ، تیم خبره ما هر آنچیزی که شما نیاز داشته باشید رو براتون خلق میکنه فقط کافیه روی دکمه زیر بزنی تا به صورت رایگان مشاوره بگیری.
                     </strong>
                     <div className="join-btn">
-                        <Link to="/" className="btn-hover">تیم پرفکت </Link>
-                        <Link to="/" className="btn-active">مشاوره اختصاصی</Link>
+                        <Link to="tel:09925438078" className="btn-hover">تماس با مشاور</Link>
+                        <Link to="/contact" className="btn-active">مشاوره اختصاصی</Link>
                     </div>
                 </div>
                 <div className="content-image"  ref={parallax1.ref} >
