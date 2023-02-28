@@ -33,11 +33,11 @@ const Contact = () => {
 
                     </div>
                     <div className="contact-icon mt-4">
-                        <a href='https://telegram.com/perfectcodeteam' target='_blank'  className='d-flex align-items-center gap-3'><i className="fa-brands fa-telegram"></i> ارتباط در تلگرام</a>
+                        <a href='https://t.me/perfectcodeteam' target='_blank'  className='d-flex align-items-center gap-3'><i className="fa-brands fa-telegram"></i> ارتباط در تلگرام</a>
                     </div>
 
                     <div className="contact-icon mt-3">
-                        <a href='https://instagram.com/_u/perfectcode.ir'  target='_blank' className='d-flex align-items-center gap-3'><i className="fa-brands fa-instagram"></i> ارتباط در اینستا گرام</a>
+                        <a href='https://instagram.com/_u/perfectcode.ir'  target='_blank' className='d-flex align-items-center gap-3'><i className="fa-brands fa-instagram"></i> ارتباط در اینستا</a>
                     </div>
                     <div className="contact-icon mt-3">
                         <a href='tel:09925438078' className='d-flex align-items-center gap-3'><i className="fa fa-phone"></i> برقراری تماس</a>
@@ -61,7 +61,9 @@ const Contact = () => {
                             <i className="fa-brands fa-telegram"></i>
                         </a>
                     </div> */}
+                    
                 </div>
+            
             </section>
 
 
