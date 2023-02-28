@@ -2,6 +2,7 @@ import './Technology.css'
 import RaedyContactForm from './../readyContactForm/RaedyContactForm';
 const Technology = () => {
     return (
+        // TODO add Helmet react
         <>
             <div className="technology container content">
                 <div className="row d-flex flex-row-reverse justify-content-center align-items-center p-4">
@@ -19,7 +20,10 @@ const Technology = () => {
                     </div>
                 </div>
             </div>
-            
+
+            <div className='chevron-down-page'>
+                <i className='fa fa-chevron-down'></i>
+            </div>
 
             {/*  */}
             <RaedyContactForm tag='h2' title='ثبت سفارش طراحی سایت در پرفکت کد'/>

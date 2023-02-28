@@ -1,5 +1,6 @@
-.technology{
+.technology {
     margin-top: 5%;
+    margin-bottom: 4% !important;
     background-color: var(--sec-background);
     padding: 25px;
     border-radius: 10px;
@@ -8,20 +9,27 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+
 .technology p {
     font-size: 18px;
 }
-.technology p , .technology strong{
+
+.technology p,
+.technology strong {
     text-align: right;
 }
-.technology strong{
+
+.technology strong {
     font-size: 20px;
 }
-.technology strong , .technology h1{
+
+.technology strong,
+.technology h1 {
     width: 100%;
     text-align: right;
     display: flex;
 }
+
 .technology button {
     display: flex;
     width: 100%;
@@ -29,7 +37,46 @@
     justify-content: center;
 }
 
+.chevron-down-page {
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    animation: chevronDown 4s linear 2s infinite alternate;
+    -webkit-animation: chevronDown 4s linear 2s infinite alternate;
+}
 
+
+@keyframes chevronDown {
+    0% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+    from {
+        color: var(--blue-color);
+    }
+    to {
+        color: var(--sec-background);
+    }
+}
 
 @media screen and (max-width: 992px) {
     .technology p {

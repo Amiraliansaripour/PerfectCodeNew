@@ -20,11 +20,11 @@ const Navbar = () => {
                             <Link to='/'><i className='fas fa-chevron-down small'></i>&nbsp;طراحی سایت</Link>
                             <div className='drop-down-item'>
                                 <ul>
-                                    <Link to='/blog'><li>طراحی سایت فروشگاهی</li></Link>
-                                    <Link to='/??'><li>طراحی سایت رزومه ای</li></Link>
-                                    <Link to='/??'><li>طراحی سایت خبری</li></Link>
-                                    <Link to='/??'><li>طراحی سایت پزشکی</li></Link>
-                                    <Link to='/??'><li>طراحی سایت موزیک</li></Link>
+                                    <Link to='/sites'><li>طراحی سایت فروشگاهی</li></Link>
+                                    <Link to='/sites'><li>طراحی سایت رزومه ای</li></Link>
+                                    <Link to='/sites'><li>طراحی سایت خبری</li></Link>
+                                    <Link to='/sites'><li>طراحی سایت پزشکی</li></Link>
+                                    <Link to='/sites'><li>طراحی سایت موزیک</li></Link>
                                 </ul>
                             </div>
                         </li>
