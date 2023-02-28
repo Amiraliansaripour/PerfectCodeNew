@@ -1,5 +1,6 @@
 import React from 'react'
 import './OrderForm.css'
+import RaedyContactForm from './../../readyContactForm/RaedyContactForm';
 const OrderForm = () => {
     return (
         <section className="order-containar">
@@ -11,7 +12,7 @@ const OrderForm = () => {
                     <p className='w-100 ms-4 d-none d-lg-block'>اولین سفارش خودتو ثبت کن</p>
                 </div>
             </div>
-            <section className="contact-form w-100">
+            {/* <section className="contact-form w-100">
                 <div className="order-form">
                     <form className='w-100 mx-3'>
                         <div className="form-group custom-form">
@@ -36,7 +37,8 @@ const OrderForm = () => {
                     <p>اولین سفارشت رو ثبت کن و از  20% تخفیف بهره مند شو<br /><span style={{ color: '#1649FF' }}> تیم ما همه جوره هواتو داره و نگران هیچ چیز نباش</span></p>
 
                 </div>
-            </section>
+            </section> */}
+            <RaedyContactForm tag='h2' title='برای ثبت سفارش میتونی این فرم رو پر کنی' />
         </section>
     )
 }
