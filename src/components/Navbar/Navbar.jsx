@@ -4,7 +4,7 @@ import '../../Responsive.css'
 import './Navbar.css'
 
 const Navbar = () => {
-    const [navbar, setNavbar] = useState(true)
+    const [navbar, setNavbar] = useState(false)
     return (
         <div>
             <div className="header-list">
@@ -45,7 +45,7 @@ const Navbar = () => {
                     <i className="fa fa-navicon"></i>
                 </div>
 
-                <div className={`navbar-background d-block d-md-none ${navbar == true ? 'd-block' : 'd-none'}`} onClick={() => setNavbar(!false)}></div>
+                <div className={`navbar-background d-block d-md-none ${navbar == true ? 'd-block' : 'd-none'}`} onClick={() => setNavbar(false)}></div>
                 
             </div>
 

@@ -1,0 +1,38 @@
+.technology{
+    margin-top: 5%;
+    background-color: var(--sec-background);
+    padding: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.technology p {
+    font-size: 18px;
+}
+.technology p , .technology strong{
+    text-align: right;
+}
+.technology strong{
+    font-size: 20px;
+}
+.technology strong , .technology h1{
+    width: 100%;
+    text-align: right;
+    display: flex;
+}
+.technology button {
+    display: flex;
+    width: 100%;
+    text-align: right;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .technology p {
+        font-size: 18px;
+    }
+}
