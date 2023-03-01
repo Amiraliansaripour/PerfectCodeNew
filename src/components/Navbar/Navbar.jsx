@@ -1,7 +1,15 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../../Responsive.css'
 import './Navbar.css'
+
+const sitesNav = [
+    { href: '/sites', title: 'طراحی سایت فروشگاهی', visible: true },
+    { href: '/sites', title: 'طراحی سایت رزومه ای', visible: true },
+    { href: '/sites', title: 'طراحی سایت خبری', visible: false },
+    { href: '/sites', title: 'طراحی سایت پزشکی', visible: false },
+    { href: '/sites', title: 'طراحی سایت موزیک', visible: false },
+]
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false)
@@ -21,11 +29,15 @@ const Navbar = () => {
                             <Link to='/'><i className='fas fa-chevron-down small'></i>&nbsp;طراحی سایت</Link>
                             <div className='drop-down-item'>
                                 <ul>
-                                    <Link to='/sites'><li>طراحی سایت فروشگاهی</li></Link>
-                                    <Link to='/sites'><li>طراحی سایت رزومه ای</li></Link>
-                                    <Link to='/sites'><li>طراحی سایت خبری</li></Link>
+
+                                    {sitesNav.map((navItems) => (
+                                        <Link to={navItems.href} className={!navItems.visible && 'd-none'}><li>{navItems.title}</li></Link>
+
+                                    ))}
+                                    {/* <Link to='/sites'><li>طراحی سایت رزومه ای</li></Link>
+                                    <Link to='/sites'><li></li></Link>
                                     <Link to='/sites'><li>طراحی سایت پزشکی</li></Link>
-                                    <Link to='/sites'><li>طراحی سایت موزیک</li></Link>
+                                    <Link to='/sites'><li>طراحی سایت موزیک</li></Link> */}
                                 </ul>
                             </div>
                         </li>

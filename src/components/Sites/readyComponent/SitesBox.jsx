@@ -1,8 +1,10 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import { useLocation } from 'react-router-dom';
 
 const SitesBox = ({ img, heading, desc }) => {
+  const location = useLocation()
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -11,6 +13,7 @@ const SitesBox = ({ img, heading, desc }) => {
       <Helmet>
         <title>پرفکت کد | {heading}</title>
         <meta name='description' content={desc} />
+        <link rel='canonical' href={`https://perfectcode.ir${location.pathname}`} />
       </Helmet>
 
       <div className="Sites container content">
