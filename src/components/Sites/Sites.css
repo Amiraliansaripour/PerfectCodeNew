@@ -1,4 +1,4 @@
-.technology {
+.Sites {
     margin-top: 5%;
     margin-bottom: 4% !important;
     background-color: var(--sec-background);
@@ -10,28 +10,28 @@
     -o-border-radius: 10px;
 }
 
-.technology p {
+.Sites p {
     font-size: 17px;
 }
 
-.technology p,
-.technology strong {
+.Sites p,
+.Sites strong {
     text-align: right;
     font-weight: normal;
 }
 
-.technology strong {
+.Sites strong {
     font-size: 19px;
 }
 
-.technology strong,
-.technology h1 {
+.Sites strong,
+.Sites h1 {
     width: 100%;
     text-align: right;
     display: flex;
 }
 
-.technology button {
+.Sites button {
     display: flex;
     width: 100%;
     text-align: right;
@@ -93,11 +93,11 @@
 }
 
 @media screen and (max-width: 992px) {
-    .technology p {
+    .Sites p {
         font-size: 18px;
     }
 
-    .technology {
+    .Sites {
         padding: 0px;
         width: 90% !important;
     }
