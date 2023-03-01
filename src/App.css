@@ -157,7 +157,7 @@ strong {
   color: #7e8699;
   width: 100%;
   direction: rtl;
-  text-align: justify;
+  text-align: right;
   font-size: 20px;
 
 }
@@ -207,4 +207,10 @@ strong {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--blue-color);
+}
+
+/* custom colors class */
+
+.blue-color{
+  color: var(--blue-color) !important ;
 }

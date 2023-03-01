@@ -30,7 +30,7 @@ const SampleBox = ({ img, name, categories, desc, link }) => {
                     >
                         <div className='share-btn'>
                             <Tooltip placement="bottom" trigger={['hover']} overlay={<span>اشتراک گذاری</span>}>
-                                <Link><i className='fa fa-share m-0'></i></Link>
+                                <Link><i className='fa fa-link m-0'></i></Link>
                             </Tooltip>
                         </div>
                     </RWebShare>

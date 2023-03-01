@@ -1,8 +1,8 @@
 import React from 'react'
 
-const RaedyContactForm = ({ title, tag }) => {
+const RaedyContactForm = ({ title, tag ,id}) => {
     return (
-        <section className="contact">
+        <section className="contact" id={id}>
             <div className="order-form-box">
                 <form>
                     <div className="form-group custom-form">

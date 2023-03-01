@@ -5,7 +5,7 @@ const HeroBlog = ({ img, alt, date, addedTime, desc }) => {
         <div className='blog-post-body mt-5'>
             <img src={img} className='img-fluid' alt={alt} />
             <div className='blog-post-desc'>
-                <div className='blog-post-time d-flex text-start mb-3'>
+                <div className='blog-post-time d-flex text-end mb-3'>
                     <p><i className='fa-regular fa-calendar' /> {date}</p>
                     <p><i className='fa-regular fa-clock' /> {addedTime}</p>
                 </div>

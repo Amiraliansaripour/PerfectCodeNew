@@ -8,12 +8,13 @@ const Navbar = () => {
     return (
         <div>
             <div className="header-list">
-
-                <div className="logo">
-                    <Link to='/'><img src="../assets/img/logo/logo.png" alt="پرفکت کد" width='60' height='60' /></Link>
-                </div>
+                <Link to='/'>
+                    <div className="logo">
+                        <img src="../assets/img/logo/logo.png" alt="پرفکت کد" width='60' height='60' />
+                    </div>
+                </Link>
                 <div className="links">
-                    <ul className={navbar ? 'active' : ''}  onClick={() => setNavbar(!navbar)}>
+                    <ul className={navbar ? 'active' : ''} onClick={() => setNavbar(!navbar)}>
                         <li><Link to="/">صفحه اصلی</Link></li>
                         <li><Link to="/team">تیم پرفکت</Link></li>
                         <li className='drop-down'>
@@ -37,16 +38,17 @@ const Navbar = () => {
                     </ul>
 
                 </div>
-                <button className="btn-active contact-btn">
-                    <Link to="/contact">تماس باما</Link>
-                </button>
-
+                <Link to="/contact">
+                    <button className="btn-active contact-btn">
+                        تماس باما
+                    </button>
+                </Link>
                 <div className={`hamburger ${navbar ? 'active' : ''}`} onClick={() => setNavbar(!navbar)}>
                     <i className="fa fa-navicon"></i>
                 </div>
 
                 <div className={`navbar-background d-block d-md-none ${navbar == true ? 'd-block' : 'd-none'}`} onClick={() => setNavbar(false)}></div>
-                
+
             </div>
 
             <div className={`navbar-background d-block d-md-none ${navbar == true ? 'd-block' : 'd-none'}`} onClick={() => setNavbar(false)}></div>
