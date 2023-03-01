@@ -8,7 +8,7 @@ const TechBox = ({ img, heading, desc }) => {
   return (
     <div className="technology container content">
       <div className="row d-flex flex-row-reverse justify-content-center align-items-center p-4">
-        <div className="col-12 col-lg-6">
+        <div className="col-12 col-lg-6"> 
           <img src={img} alt={`طراحی سایت ، ${heading}`} className="img-fluid" />
         </div>
         <div className="col-12 col-lg-6 mt-5 mt-lg-0">
