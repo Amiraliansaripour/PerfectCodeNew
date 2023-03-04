@@ -78,31 +78,54 @@
     align-items: center;
     flex-direction: row-reverse;
     text-align: right;
-    gap: 20px;
+    /* gap: 20px; */
     margin-top: 10px;
 }
 
 .contact-icon i {
     background-color: #1649ff;
     color: #fff;
-    font-size: 25px;
-    padding: 10px;
+    font-size: 20px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
 }
 
 .contact-icon a {
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
+    border: 1px solid #dddddd4a;
+    background-color: #ffffff26;
+    width: 185px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.contact-icon a:hover {
+    opacity: 0.7;
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    -o-transform: scale(.95);
 }
 
 
 .contact-social {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
     padding: 35px 0;
     color: #fff;
 }
+
+
 
 .contact-social a {
     margin-right: 10px;
@@ -112,16 +135,28 @@
     transition: 0.5s;
 }
 
+.contact-social a:last-child {
+    margin-right: 0px;
+}
+
 .contact-social a:hover {
     background-color: #1649ff;
 }
 
 .contact-social a i {
     font-size: 16px;
+    transition: 0.5s;
     color: #fff;
     padding: 5px;
 }
 
+.contact-social a:hover i {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
 
 @media only screen and (max-width: 992px) {
     .contact {
@@ -129,18 +164,18 @@
         flex-direction: column-reverse;
     }
 
-.order-form-box {
-    width: 100%;
-    align-items: flex-end;
-    padding: 0;
-}
+    .order-form-box {
+        width: 100%;
+        align-items: flex-end;
+        padding: 0;
+    }
 
-.order-form-box form{
-    width: 100%;
-}
+    .order-form-box form {
+        width: 100%;
+    }
 
-.social-box{
-    width: 100%;
-}
+    .social-box {
+        width: 100%;
+    }
 
 }

@@ -82,7 +82,7 @@ button {
 }
 
 .with-active:hover {
-  border: 1.5px solid #fff;
+  outline: 1.5px solid #fff;
   color: #fff;
   background-color: transparent;
 }
@@ -157,7 +157,7 @@ strong {
   color: #7e8699;
   width: 100%;
   direction: rtl;
-  text-align: justify;
+  text-align: right;
   font-size: 20px;
 
 }
@@ -185,4 +185,32 @@ strong {
 
 .tooltip {
   padding: 10px;
+}
+
+/* custom scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #212d49;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue-color);
+}
+
+/* custom colors class */
+
+.blue-color{
+  color: var(--blue-color) !important ;
 }

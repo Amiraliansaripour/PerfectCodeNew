@@ -8,9 +8,9 @@ const MainBlog = ({ img, id, alt, date, addedTime, desc }) => {
             <div className='blog-post-body mt-5'>
                 <img src={img} className='img-fluid' alt={alt} />
                 <div className='blog-post-desc'>
-                    <div className='blog-post-time d-flex text-start mb-3'>
-                        <p><i className='fa fa-calendar' /> {date}</p>
-                        <p><i className='fa fa-clock-o' /> {addedTime}</p>
+                    <div className='blog-post-time d-flex text-end mb-3'>
+                        <p><i className='fa-regular fa-calendar' /> {date}</p>
+                        <p><i className='fa-regular fa-clock' /> {addedTime}</p>
                     </div>
                     <p className='blog-title text-light'>{desc}</p>
                     <div className='mt-4 d-flex flex-row-reverse justify-content-start gap-3'>
@@ -26,7 +26,15 @@ const MainBlog = ({ img, id, alt, date, addedTime, desc }) => {
                                 </button>
                             </Tooltip>
                         </Link>
+                        <Link to='/'>
+                            <Tooltip placement="bottom" trigger={['hover']} overlay={<span>اشتراک گذاری</span>}>
+                                <button className='btn-active'>
+                                    <i className='fa fa-link'></i>
+                                </button>
+                            </Tooltip>
+                        </Link>
                     </div>
+                    
                 </div>
             </div>
         </div>

@@ -5,16 +5,13 @@ import AboutTeam from './aboutTeam/AboutTeam';
 import OurTeam from './ourTeam/OurTeam';
 import AboutUsOurProject from './aboutUsOurProject/AboutUsOurProject';
 import Footer from '../Footer/Footer';
-
 const AboutUs = () => {
     return (
         <>
-            <Navbar />
             <AboutUsHero />
             <AboutTeam />
             <AboutUsOurProject />
             <OurTeam />
-            <Footer />
         </>
     )
 }

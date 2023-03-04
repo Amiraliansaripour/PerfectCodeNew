@@ -15,7 +15,7 @@ const CommentBox = ({ img, name, tagName, tagLink, desc }) => {
                 </div>
                 <div className="comment-instagram">
                     <a href="instagram:">
-                        <i className="fa fa-instagram"></i>
+                        <i className="fa-brands fa-instagram"></i>
                     </a>
                 </div>
             </div>

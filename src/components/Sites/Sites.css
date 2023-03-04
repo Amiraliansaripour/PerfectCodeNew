@@ -1,0 +1,104 @@
+.Sites {
+    margin-top: 5%;
+    margin-bottom: 4% !important;
+    background-color: var(--sec-background);
+    padding: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.Sites p {
+    font-size: 17px;
+}
+
+.Sites p,
+.Sites strong {
+    text-align: right;
+    font-weight: normal;
+}
+
+.Sites strong {
+    font-size: 19px;
+}
+
+.Sites strong,
+.Sites h1 {
+    width: 100%;
+    text-align: right;
+    display: flex;
+}
+
+.Sites button {
+    display: flex;
+    width: 100%;
+    text-align: right;
+    justify-content: center;
+}
+
+.chevron-down-page {
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    animation: chevronDown 4s linear 2s infinite alternate;
+    -webkit-animation: chevronDown 4s linear 2s infinite alternate;
+}
+
+/* tech-perfect-info */
+.tech-perfect-info {
+    color: var(--sec-color) !important;
+    background-color: var(--background);
+    padding: 8px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@keyframes chevronDown {
+    0% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+
+    from {
+        color: var(--blue-color);
+    }
+
+    to {
+        color: var(--sec-background);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .Sites p {
+        font-size: 18px;
+    }
+
+    .Sites {
+        padding: 0px;
+        width: 90% !important;
+    }
+}

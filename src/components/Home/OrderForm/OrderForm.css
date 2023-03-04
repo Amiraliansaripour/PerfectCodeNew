@@ -6,9 +6,25 @@
     flex-direction: column;
     color: #fff;
 }
+.order-title {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 100px;
+    width: 100%;
+}
 
-.order-containar>h2 {
-    padding: 0 100px 0 0;
+.order-title h2 {
+    /* padding: 10px; */
+    width: 100%;
+}
+
+
+.order-title div p {
+    text-align: right;
+    width: 60%;
+    color: var(--sec-color);
 }
 
 .contact-form {
@@ -89,7 +105,7 @@
 }
 
 .cantact-details p {
-    width: 80%;
+    width: 100%;
     font-size: 18px;
     color: var(--sec-color);
 }
@@ -109,7 +125,6 @@
 
     .cantact-details {
         text-align: right;
-        align-items: center;
         justify-content: center;
         width: 90%;
     }
@@ -124,5 +139,15 @@
     .order-form {
         width: 100%;
         padding: 35px 5px;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .services-title {
+        justify-content: center;
+    }
+
+    .services-title div p {
+        display: none;
     }
 }

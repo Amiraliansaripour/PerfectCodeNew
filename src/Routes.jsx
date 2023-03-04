@@ -4,8 +4,8 @@ import AboutUsPage from './pages/AboutUsPage';
 import HomePage from './pages/HomePage';
 import BlogPage from './pages/BlogPage';
 import PricingPage from './pages/PricingPage';
-import Contact from './components/Contact/Contact';
 import BlogPost from './components/blog/blogPost/BlogPost';
+import ContactPage from './pages/ContactPage';
 
 
 
@@ -13,10 +13,10 @@ const routes = [
     { path: '/', exact: "true", element: <HomePage /> },
     { path: '/blog', exact: "true", element: <BlogPage /> },
     { path: '/blog/:id', exact: "true", element:<BlogPost /> },
-
+    { path: '/sites', exact: "true", element: <SitesPage /> },
     { path: '/about', exact: "true", element: <AboutUsPage /> },
     { path: '/pricing', exact: "true", element: <PricingPage /> },
-    { path: '/contact', exact: "true", element: <Contact /> },
+    { path: '/contact', exact: "true", element: <ContactPage /> },
 
     { path: '*', element: <NotFound /> },
 ]
