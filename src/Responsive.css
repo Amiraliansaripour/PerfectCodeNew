@@ -80,6 +80,11 @@
     .coins{
         width: 100px !important;
     }
+
+    
+.blog-description {
+    width: 100% !important; 
+  }
 }
 
 @media only screen and (max-width: 576px) {
