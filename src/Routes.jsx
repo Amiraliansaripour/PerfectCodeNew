@@ -13,7 +13,7 @@ import SitesPage from './pages/SitesPage';
 const routes = [
     { path: '/', exact: "true", element: <HomePage /> },
     { path: '/blog', exact: "true", element: <BlogPage /> },
-    { path: '/blogpost', exact: "true", element:<BlogPost /> },
+    { path: '/blogpost/:id', exact: "true", element:<BlogPost /> },
     { path: '/sites', exact: "true", element: <SitesPage /> },
     { path: '/about', exact: "true", element: <AboutUsPage /> },
     { path: '/pricing', exact: "true", element: <PricingPage /> },

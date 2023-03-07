@@ -73,6 +73,10 @@
     }
 
     /* */
+    
+.profile-box {
+    position: relative;
+  }
 
 }
 
