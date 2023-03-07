@@ -6,18 +6,27 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
 const BlogPost = () => {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
   const {id} = useParams()
   const [blogs, setBlogs] = useState([])
+  const getData = async() =>{
+
+    await axios.get(`https://api.perfectcode.ir/api/blog/${id}`).then(({ data }) => setBlogs([data]));
+  } 
   useEffect(() =>{
-    axios.get(`https://api.perfectcode.ir/api/blog/${id}`).then(({ data }) => setBlogs([data]));
-  }, [])
+    getData()
+  }, [getData()])
+  
   let mainBlog = []
+
   blogs.map(item => (
     mainBlog = item.blog
   ))
   return (
     <>
-      <div className="blog-page">
+      <div className="blog-page" key={mainBlog.id}>
         <div className="post-blog">
           <div className="blog-date">
             <p>{mainBlog.created_at}</p>

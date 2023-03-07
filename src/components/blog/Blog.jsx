@@ -7,18 +7,33 @@ import { useEffect } from 'react';
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([])
+  const [lastBlog, setLastBlog] = useState([])
+  const [treepleBlog, setTreepleBlog] = useState([])
   useEffect(() => {
     axios.get('https://api.perfectcode.ir/api/blog').then(({ data }) => setBlogs([data]));
+    axios.get(`https://api.perfectcode.ir/api/lastblog`).then(({ data }) => setLastBlog([data]));
+    axios.get(`https://api.perfectcode.ir/api/treepleblog`).then(({ data }) => setTreepleBlog([data]));
+
   }, [])
   
   let mainBlog = []
+  let mainLastBlog = []
+  let mainTreepleBlog = []
+  
   blogs.map(item => (
     mainBlog = item.blog
   ))
-  console.log(blogs);
+  lastBlog.map(item => (
+    mainLastBlog = item.lastblog
+  ))
+  treepleBlog.map(item => (
+    mainTreepleBlog = item.treepleblog
+  ))
+
+  
   return (
     <>
-      <BlogHero />
+      <BlogHero lastBlog={mainLastBlog} treepleBlog={mainTreepleBlog} />
       <Divider />
       <LastestPost blogs={mainBlog}/>
     </>
