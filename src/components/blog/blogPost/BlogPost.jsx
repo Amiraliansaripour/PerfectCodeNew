@@ -9,21 +9,20 @@ const BlogPost = () => {
   // useEffect(() => {
   //   window.scrollTo(0, 0)
   // }, [])
-  const {id} = useParams()
+  const { id } = useParams()
   const [blogs, setBlogs] = useState([])
-  const getData = async() =>{
-
-    await axios.get(`https://api.perfectcode.ir/api/blog/${id}`).then(({ data }) => setBlogs([data]));
-  } 
-  useEffect(() =>{
-    getData()
-  }, [getData()])
-  
   let mainBlog = []
+  useEffect(() => {
+    axios.get(`https://api.perfectcode.ir/api/blog/${id}`).then(({ data }) => setBlogs([data]));
 
-  blogs.map(item => (
-    mainBlog = item.blog
-  ))
+
+  }, [])
+
+    blogs.map(item => (
+      mainBlog = item.blog
+    ))
+
+
   return (
     <>
       <div className="blog-page" key={mainBlog.id}>
@@ -63,31 +62,31 @@ const BlogPost = () => {
                 <ul class="social">
                   <li>
                     <a href="">
-                      <i className="fa fa-telegram"></i>                 
+                      <i className="fa fa-telegram"></i>
                     </a>
-                    </li>
+                  </li>
                   <li>
                     <a href=""  >
-                      <i className="fa fa-github"></i>                 
+                      <i className="fa fa-github"></i>
                     </a>
-                    </li>
-                  <li>
-                    <a href=""  aria-hidden="true">
-                      <i className="fa fa-gitlab"></i>                 
-                    </a>
-                    </li>
+                  </li>
                   <li>
                     <a href="" aria-hidden="true">
-                      <i className="fa fa-linkedin"></i>                 
+                      <i className="fa fa-gitlab"></i>
                     </a>
-                    </li>
+                  </li>
+                  <li>
+                    <a href="" aria-hidden="true">
+                      <i className="fa fa-linkedin"></i>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
 
           </div>
           {/* blog body */}
-          <div className="col-lg-8 col-md-12 col-sm-12 blog-body" dangerouslySetInnerHTML={{ __html: mainBlog.body }}/>
+          <div className="col-lg-8 col-md-12 col-sm-12 blog-body" dangerouslySetInnerHTML={{ __html: mainBlog.body }} />
         </div>
 
         <FullBanner />

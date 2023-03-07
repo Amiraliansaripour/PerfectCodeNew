@@ -13,7 +13,7 @@ const HeroBlog = ({ img, alt, date, addedTime, title , id }) => {
                 </div>
                 <p className='blog-title text-light'>{title}</p>
                 <div className='mt-4 d-flex flex-row-reverse justify-content-start gap-3'>
-                        <Link to={`/blogpost/${id}&title=${title}`}>
+                        <Link to={`/blogpost/${id}`}>
                             <button className='btn-active'>
                                 مطالعه بیشتر
                             </button>
