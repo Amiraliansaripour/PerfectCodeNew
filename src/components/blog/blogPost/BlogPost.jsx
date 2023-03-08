@@ -44,8 +44,8 @@ const BlogPost = () => {
           </p>
         </div>
 
-        <div className="blog-thumnail">
-          <img src={mainBlog.img} alt="blog thummnail" />
+        <div className="blog-thumnail py-2">
+          <img className="" style={{objectFit:"contain"}} src={mainBlog.img} alt="blog thummnail" />
         </div>
 
         <div className="row blog-section">
@@ -86,7 +86,7 @@ const BlogPost = () => {
 
           </div>
           {/* blog body */}
-          <div className="col-lg-8 col-md-12 col-sm-12 blog-body" dangerouslySetInnerHTML={{ __html: mainBlog.body }} />
+          <div className="col-lg-8 col-md-12 col-sm-12 blog-body text-right" dangerouslySetInnerHTML={{ __html: mainBlog.body }} />
         </div>
 
         <FullBanner />
