@@ -44,8 +44,8 @@ const BlogPost = () => {
           </p>
         </div>
 
-        <div className="blog-thumnail py-2">
-          <img className="" style={{objectFit:"contain"}} src={mainBlog.img} alt="blog thummnail" />
+        <div className="blog-thumnail py-2" style={{borderRadius:"15px",overflow: "hidden"}}>
+          <img  src={mainBlog.img} alt="blog thummnail" />
         </div>
 
         <div className="row blog-section">
