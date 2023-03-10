@@ -13,7 +13,7 @@ const Services = () => {
                     <h2>خدمات پرفکت کد</h2>
                 </div>
                 <div>
-                    <p className='w-100 ms-4'>کسب و کارتو به پرفکت کد بسپار</p>
+                    <p className='w-100 mb-0'>کسب و کارتو به پرفکت کد بسپار</p>
                 </div>
             </div>
             <div className="services-grid">

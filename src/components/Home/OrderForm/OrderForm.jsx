@@ -9,7 +9,7 @@ const OrderForm = () => {
                     <h2 className='mb-4 mb-lg-0'>ثبت اولیه سفارش</h2>
                 </div>
                 <div>
-                    <p className='w-100 ms-4 d-none d-lg-block'>اولین سفارش خودتو ثبت کن</p>
+                    <p className='w-100 mb-0 d-none d-lg-block'>اولین سفارش خودتو ثبت کن</p>
                 </div>
             </div>
             <RaedyContactForm tag='h2' title='برای ثبت سفارش میتونی این فرم رو پر کنی' />

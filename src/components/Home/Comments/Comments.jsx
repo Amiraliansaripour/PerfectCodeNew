@@ -54,7 +54,7 @@ const Comments = () => {
                     <h2 className='mb-4 mb-lg-0'>نظرات کاربران</h2>
                 </div>
                 <div>
-                    <p className='w-100 ms-4 d-none d-lg-block'>نظرات رو بخون و تصمیم بگیر</p>
+                    <p className='w-100 ms-4 mb-0 d-none d-lg-block'>نظرات رو بخون و تصمیم بگیر</p>
                 </div>
             </div>
             <div className="comment-slider">
