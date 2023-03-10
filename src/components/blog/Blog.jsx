@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React , { useEffect, useState }from 'react'
 import BlogHero from './blogHero/BlogHero';
 import LastestPost from './lastestPost/LastestPost';
 import Divider from './Divider';
 import axios from 'axios';
-import { useEffect } from 'react';
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([])
@@ -15,11 +14,11 @@ const Blog = () => {
     axios.get(`https://api.perfectcode.ir/api/treepleblog`).then(({ data }) => setTreepleBlog([data]));
 
   }, [])
-  
+
   let mainBlog = []
   let mainLastBlog = []
   let mainTreepleBlog = []
-  
+
   blogs.map(item => (
     mainBlog = item.blog
   ))
@@ -30,12 +29,12 @@ const Blog = () => {
     mainTreepleBlog = item.treepleblog
   ))
 
-  
+
   return (
     <>
-      <BlogHero lastBlog={mainLastBlog} treepleBlog={mainTreepleBlog} />
-      <Divider />
-      <LastestPost blogs={mainBlog}/>
+        <BlogHero lastBlog={mainLastBlog} treepleBlog={mainTreepleBlog} />
+        <Divider />
+        <LastestPost blogs={mainBlog} />
     </>
   )
 }

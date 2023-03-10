@@ -4,6 +4,7 @@ import './BlogPost.css'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const BlogPost = () => {
   useEffect(() => {
@@ -23,6 +24,14 @@ const BlogPost = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{`پرفکت کد | ${mainBlog.title}`}</title>
+        <meta name="description"
+          content={mainBlog.introduction}
+          data-rh="true" />
+        <link rel="canonical" href={`https://perfectcode.ir/blogpost/${mainBlog.id}`} />
+      </Helmet>
+
       <div className="blog-page" key={mainBlog.id}>
         <div className="post-blog">
           <div className="blog-date">
