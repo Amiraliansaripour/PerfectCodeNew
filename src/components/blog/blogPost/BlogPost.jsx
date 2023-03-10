@@ -6,21 +6,19 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
 const BlogPost = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const { id } = useParams()
   const [blogs, setBlogs] = useState([])
   let mainBlog = []
   useEffect(() => {
     axios.get(`https://api.perfectcode.ir/api/blog/${id}`).then(({ data }) => setBlogs([data]));
-
-
   }, [])
 
-    blogs.map(item => (
-      mainBlog = item.blog
-    ))
+  blogs.map(item => (
+    mainBlog = item.blog
+  ))
 
 
   return (
@@ -30,7 +28,7 @@ const BlogPost = () => {
           <div className="blog-date">
             <p>{mainBlog.created_at}</p>
             <p>------</p>
-            <p>امیرعلی انصاری پور</p>
+            <p>{mainBlog.user}</p>
           </div>
 
           <div className="blog-titlee">
@@ -39,16 +37,14 @@ const BlogPost = () => {
             </h1>
           </div>
 
-          <p className="blog-description">
-            اگر در حوزه سئو فعالیت دارید یا این که کسب و کاری دارید که یکی از کانال های بازاریابی شما سئو است، احتمالاً تا به حال فاکتورهای زیادی به گوشتان خورده است! البته این فاکتورها معمولاً فاکتورهایی هستند که در رتبه بندی سایت ها تاثیر دارند.
-          </p>
+          <p className="blog-description">{mainBlog.introduction}</p>
         </div>
 
-        <div className="blog-thumnail py-2" style={{borderRadius:"15px",overflow: "hidden"}}>
-          <img  src={mainBlog.img} alt="blog thummnail" />
+        <div className="blog-thumnail py-2" style={{ borderRadius: "15px", overflow: "hidden" }}>
+          <img src={mainBlog.img} alt="blog thummnail" />
         </div>
 
-        <div className="row blog-section">
+        <div className="row blog-section mb-5">
           <div className="col-lg-4 col-md-12 col-sm-12 blog-profile">
             <div className="profile-box">
               <div className="our-team">
@@ -56,10 +52,10 @@ const BlogPost = () => {
                   <img className="img-fluid" src="https://assets.website-files.com/61772ea4a9789ec05421a501/617b5718cd3b6d4e732f79e6_team-member-john-carter-defi-x-template.svg" />
                 </div>
                 <div className="team-content">
-                  <h3 className="name">امیرعلی انصاری پور</h3>
+                  <h3 className="name">{mainBlog.user}</h3>
                   <h4 className="title">Web Developer</h4>
                 </div>
-                <ul class="social">
+                <ul className="social">
                   <li>
                     <a href="">
                       <i className="fa fa-telegram"></i>
