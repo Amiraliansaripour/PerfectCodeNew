@@ -25,6 +25,14 @@ const BlogPost = () => {
     mainBlog = item.blog
   ))
 
+   // Next Blog api
+   let nextblog = []
+   useEffect(() => {
+     axios.get(`https://api.perfectcode.ir/api/blog/${id}`).then(({data}) => setNextBlog([data]));
+   })
+   nextBlog.map(item => (
+     nextblog = item.blog
+   ))
 
   return (
     <>
