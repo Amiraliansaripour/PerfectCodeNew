@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../../Responsive.css'
 import './Navbar.css'
+import { HashLink } from 'react-router-hash-link';
 
 const sitesNav = [
     { href: '/sites', title: 'طراحی سایت فروشگاهی', visible: true },
@@ -24,8 +25,8 @@ const Navbar = () => {
                 <div className="links">
                     <ul className={navbar ? 'active' : ''} onClick={() => setNavbar(!navbar)}>
                         <li><Link to="/">صفحه اصلی</Link></li>
-                        <li><Link to="/team">تیم پرفکت</Link></li>
-                        <li className='drop-down'>
+                        <li><HashLink to="/about#ourTeam">تیم پرفکت</HashLink></li>
+                        <li className='drop-down d-none'>
                             <Link to='/'><i className='fas fa-chevron-down small'></i>&nbsp;طراحی سایت</Link>
                             <div className='drop-down-item'>
                                 <ul>

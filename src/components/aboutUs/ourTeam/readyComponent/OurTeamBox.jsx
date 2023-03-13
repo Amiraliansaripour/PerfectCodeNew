@@ -4,7 +4,7 @@ import Tooltip from 'rc-tooltip';
 const OurTeamBox = ({ name, identity, img, telegram, phone, github }) => {
     return (
         <div className='box box-1 p-5 d-flex flex-column gap-2'>
-            <img src={img} alt={`تیم پرفکت کد ${name}`} width='100' height='100' />
+            <img src={img} alt={`تیم پرفکت کد ${name}`} width='170' height='170' />
             <h3 className='mt-3'>{name}</h3>
             <p>{identity}</p>
             <div className='ourTeamsocial d-flex align-items-center justify-content-evenly'>
