@@ -9,11 +9,13 @@ import { Helmet } from 'react-helmet';
 import moment from 'jalali-moment'
 
 const BlogPost = () => {
+  const { id } = useParams()
+  const [blogs, setBlogs] = useState([])
+  const [nextBlog, setNextBlog] = useState([])
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-  const { id } = useParams()
-  const [blogs, setBlogs] = useState([])
   let mainBlog = []
   useEffect(() => {
     axios.get(`https://api.perfectcode.ir/api/blog/${id}`).then(({ data }) => setBlogs([data]));
@@ -57,7 +59,7 @@ const BlogPost = () => {
           <img src={mainBlog.img} alt="blog thummnail" />
         </div>
 
-        <div className="container blog-containar p-3">
+        <div className="container blog-containar p-3 mt-3">
           <div className="row blog-section mb-5">
             <div className="col-lg-4 col-md-12 col-sm-12 blog-profile">
               <div className="profile-box">
@@ -93,6 +95,14 @@ const BlogPost = () => {
                   </ul>
                 </div>
               </div>
+
+              <div className="sociall-container">
+                <a href="https://instagram.com/_u/perfectcode.ir">صفحه اینستاگرام پرفکت کد</a>
+              </div>
+
+            <div className="next-blog">
+
+            </div>
 
             </div>
             {/* blog body */}
