@@ -5,8 +5,9 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 // convert to persian date
-import moment from 'jalali-moment'
+import moment from 'jalali-moment' 
 
 const BlogPost = () => {
   const { id } = useParams()
@@ -26,13 +27,13 @@ const BlogPost = () => {
   ))
 
    // Next Blog api
-   let nextblog = []
-   useEffect(() => {
-     axios.get(`https://api.perfectcode.ir/api/blog/${id}`).then(({data}) => setNextBlog([data]));
-   })
-   nextBlog.map(item => (
-     nextblog = item.blog
-   ))
+  //  let nextblog = []
+  //  useEffect(() => {
+  //    axios.get(`https://api.perfectcode.ir/api/blog/${id}`).then(({data}) => setNextBlog([data]));
+  //  })
+  //  nextBlog.map(item => (
+  //    nextblog = item.blog
+  //  ))
 
   return (
     <>
@@ -108,9 +109,24 @@ const BlogPost = () => {
                 <a href="https://instagram.com/_u/perfectcode.ir">صفحه اینستاگرام پرفکت کد</a>
               </div>
 
-            <div className="next-blog">
-
+            <div className='blog-post-body mt-4'style={{borderRadius:"10px"}}>
+            <Link to={`/blogpost/3`} style={{width:"100%",height:"200px"}}>
+            <img src="https://cms.liara.ir/wp-content/uploads/2022/05/what-is-load-balancing.png" className='img-fluid' style={{width:"100%",height:"100%",objectFit:"cover"}} />
+            </Link>
+            <div className='blog-post-desc'>
+                <div className='blog-post-time d-flex text-end mb-3'>
+                    <p><i className='fa-regular fa-clock m-1' />4 روز پیش</p>
+                </div>
+                <p className='blog-title text-light'><Link to={`/blogpost/3`}>نحوه ثبت نام در زرین پال</Link></p>
+                <div className='mt-4 d-flex flex-row-reverse justify-content-start gap-3'>
+                        <Link to={`/blogpost/3`}>
+                            <button className='btn-active'>
+                                مطالعه بیشتر
+                            </button>
+                        </Link>
+                    </div>
             </div>
+        </div>
 
             </div>
             {/* blog body */}

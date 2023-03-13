@@ -110,26 +110,6 @@
   
 }
 
-.sociall-container {
-  width: 99%;
-  height: 50px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(45deg, rgb(64, 93, 230), rgb(88, 81, 219), rgb(131, 58, 180), rgb(193, 53, 132), rgb(225, 48, 108), rgb(253, 29, 29));
-  box-shadow:
-  0px 8px 10px 1px hsla(0,0%,0%,0.14), 
-  0px 3px 14px 2px hsla(0,0%,0%,0.12), 
-  0px 5px 5px -3px hsla(0,0%,0%,0.2);
-}
-
-.sociall-container a{
-  width: 100%;
-  text-align: center;
-}
-/* card profile  */
-
 .profile-box {
   /* position: absolute; */
   width: 100%;
@@ -253,3 +233,33 @@
   background-color: #f7f5ec;
 }
 
+
+
+
+/* card profile  */
+.sociall-container {
+  width: 99%;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, rgb(64, 93, 230), rgb(88, 81, 219), rgb(131, 58, 180), rgb(193, 53, 132), rgb(225, 48, 108), rgb(253, 29, 29));
+  box-shadow:
+  0px 8px 10px 1px hsla(0,0%,0%,0.14), 
+  0px 3px 14px 2px hsla(0,0%,0%,0.12), 
+  0px 5px 5px -3px hsla(0,0%,0%,0.2);
+}
+
+.sociall-container a{
+  width: 100%;
+  text-align: center;
+}
+
+
+.next-blog{
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  background-color: #1D263B;
+}
