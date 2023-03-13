@@ -10,7 +10,7 @@ const CommentBox = ({ img, name, tagName, tagLink, desc }) => {
                     </div>
                     <div className="comment-profile-name">
                         <p>{name}</p>
-                        <a href={tagLink}>{tagName}</a>
+                        <a href={tagLink} target="_blank">{tagName}</a>
                     </div>
                 </div>
                 <div className="comment-instagram">

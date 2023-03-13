@@ -44,7 +44,7 @@ const Samples = () => {
     <section className="samples"  ref={parallax.ref} id='samples'>
       <div className="sample-title mb-5 flex-column flex-lg-row-reverse" >
         <h2 className='mb-4 mb-lg0'>نمونه کار ها</h2>
-        <Link to="/samples" className="btn-active">دیدن همه نمونه کارها</Link>
+        <Link to="/samples" className="btn-active btn disabled">دیدن همه نمونه کارها</Link>
       </div>
 
       <div className="samples-slider mt-5">
