@@ -31,9 +31,9 @@ const Footer = () => {
               {/* 1 */}
               <div className="text-center col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h6 className="text-right text-uppercase mb-4 font-weight-bold ">پل های ارتباطی</h6>
-                <p><i className="fa fa-envelope mr-3 "></i> perfectcode@gmail.com</p>
-                <p><i className="fa fa-phone mr-3"></i> 09925438078</p>
-                <p><i className="fa fa-phone mr-3"></i> 09102442108</p>
+                <p><i className="fa fa-envelope mr-3 "></i> <a href="mailto:perfectcodeteam@gmail.com">perfectcode@gmail.com</a></p>
+                <p><i className="fa fa-phone mr-3 ml-2"></i><a href="tel:09925438078">09925438078</a></p>
+                <p><i className="fa fa-phone mr-3 ml-2"></i><a href="tel:09102442108">09102442108</a></p>
               </div>
 
 
@@ -101,20 +101,6 @@ const Footer = () => {
               </div>
 
               <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                {/* <!-- Facebook --> */}
-                <a
-                  className="btn btn-outline-light btn-floating m-1"
-                  //  className="text-white"
-                  role="button"
-                ><i className="fa-brands fa-facebook-f"></i></a>
-
-                {/* <!-- Twitter --> */}
-                <a
-                  className="btn btn-outline-light btn-floating m-1"
-                  //  className="text-white"
-                  role="button"
-                ><i className="fa-brands fa-twitter"></i></a>
-
                 {/* <!-- Google --> */}
                 <a href='mailto:perfectcodeteam@gmail.com'
                   className="btn btn-outline-light btn-floating m-1"
