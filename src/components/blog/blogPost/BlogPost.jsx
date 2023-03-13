@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+// convert to persian date
+import moment from 'jalali-moment'
 
 const BlogPost = () => {
   useEffect(() => {
@@ -35,7 +37,9 @@ const BlogPost = () => {
       <div className="blog-page" key={mainBlog.id}>
         <div className="post-blog">
           <div className="blog-date">
-            <p>{mainBlog.created_at}</p>
+            <p>
+            {moment(mainBlog.created_at).locale('fa').format('YYYY/MM/DD')}
+            </p>
             <p>------</p>
             <p>{mainBlog.user}</p>
           </div>
