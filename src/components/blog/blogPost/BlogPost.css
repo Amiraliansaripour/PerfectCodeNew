@@ -53,18 +53,18 @@
   align-items: flex-end;
   justify-content: space-around;
   flex-direction: column;
-  text-align: justify;
+  text-align: right;
   height: auto;
   color: #fff;
   background-color: #1d263b40;
   border-radius: 15px;
   box-shadow:
-  0px 8px 10px 1px hsla(0,0%,0%,0.14), 
-  0px 3px 14px 2px hsla(0,0%,0%,0.12), 
-  0px 5px 5px -3px hsla(0,0%,0%,0.2);
+    0px 8px 10px 1px hsla(0, 0%, 0%, 0.14),
+    0px 3px 14px 2px hsla(0, 0%, 0%, 0.12),
+    0px 5px 5px -3px hsla(0, 0%, 0%, 0.2);
 }
 
-.blog-body h2{
+.blog-body h2 {
   padding: 20px 15px;
   color: #fff;
 }
@@ -75,7 +75,7 @@
   padding: 10px;
 }
 
-.blog-body> *{
+.blog-body>* {
   white-space: pre-wrap;
 }
 
@@ -105,16 +105,15 @@
 
 
 .blog-profile {
-  padding: 20px;
+  padding: 0 20px;
   height: auto;
-  
+
 }
 
 .profile-box {
-  /* position: absolute; */
   width: 100%;
   border-radius: 15px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   color: #fff;
   /* top: 10px; */
   -webkit-border-radius: 15px;
@@ -122,10 +121,11 @@
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   box-shadow:
-  0px 8px 10px 1px hsla(0,0%,0%,0.14), 
-  0px 3px 14px 2px hsla(0,0%,0%,0.12), 
-  0px 5px 5px -3px hsla(0,0%,0%,0.2);
+    0px 8px 10px 1px hsla(0, 0%, 0%, 0.14),
+    0px 3px 14px 2px hsla(0, 0%, 0%, 0.12),
+    0px 5px 5px -3px hsla(0, 0%, 0%, 0.2);
 }
+
 .our-team {
   padding: 30px 0 40px;
   margin-bottom: 30px;
@@ -224,7 +224,7 @@
   border-radius: 10px;
 }
 
-.our-team .social li a i{
+.our-team .social li a i {
   font-size: 20px;
 }
 
@@ -245,19 +245,32 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(45deg, rgb(64, 93, 230), rgb(88, 81, 219), rgb(131, 58, 180), rgb(193, 53, 132), rgb(225, 48, 108), rgb(253, 29, 29));
-  box-shadow:
-  0px 8px 10px 1px hsla(0,0%,0%,0.14), 
-  0px 3px 14px 2px hsla(0,0%,0%,0.12), 
-  0px 5px 5px -3px hsla(0,0%,0%,0.2);
+  box-shadow: 0px 8px 10px 1px hsla(0, 0%, 0%, 0.14), 0px 3px 14px 2px hsla(0, 0%, 0%, 0.12), 0px 5px 5px -3px hsla(0, 0%, 0%, 0.2);
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
 }
 
-.sociall-container a{
+.sociall-container a {
   width: 100%;
   text-align: center;
 }
 
+.sociall-container a:hover {
+  color: #f7f5ec;
+  opacity: 1;
+  z-index: 55;
+}
 
-.next-blog{
+
+.sociall-container:hover {
+  opacity: 0.8;
+}
+
+
+.next-blog {
   width: 100%;
   height: 300px;
   border-radius: 15px;
