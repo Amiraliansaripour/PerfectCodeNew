@@ -38,7 +38,7 @@ const BlogPost = () => {
         <div className="post-blog">
           <div className="blog-date">
             <p>
-            {moment(mainBlog.created_at).locale('fa').format('YYYY/MM/DD')}
+              {moment(mainBlog.created_at).locale('fa').format('YYYY/MM/DD')}
             </p>
             <p>------</p>
             <p>{mainBlog.user}</p>
@@ -57,45 +57,47 @@ const BlogPost = () => {
           <img src={mainBlog.img} alt="blog thummnail" />
         </div>
 
-        <div className="row blog-section mb-5">
-          <div className="col-lg-4 col-md-12 col-sm-12 blog-profile">
-            <div className="profile-box">
-              <div className="our-team">
-                <div className="picture">
-                  <img className="img-fluid" src="https://assets.website-files.com/61772ea4a9789ec05421a501/617b5718cd3b6d4e732f79e6_team-member-john-carter-defi-x-template.svg" />
+        <div className="container blog-containar p-3">
+          <div className="row blog-section mb-5">
+            <div className="col-lg-4 col-md-12 col-sm-12 blog-profile">
+              <div className="profile-box">
+                <div className="our-team">
+                  <div className="picture">
+                    <img className="img-fluid" src="https://assets.website-files.com/61772ea4a9789ec05421a501/617b5718cd3b6d4e732f79e6_team-member-john-carter-defi-x-template.svg" />
+                  </div>
+                  <div className="team-content">
+                    <h3 className="name">{mainBlog.user}</h3>
+                    <h4 className="title">Web Developer</h4>
+                  </div>
+                  <ul className="social">
+                    <li>
+                      <a href="">
+                        <i className="fa fa-telegram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href=""  >
+                        <i className="fa fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" aria-hidden="true">
+                        <i className="fa fa-gitlab"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" aria-hidden="true">
+                        <i className="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <div className="team-content">
-                  <h3 className="name">{mainBlog.user}</h3>
-                  <h4 className="title">Web Developer</h4>
-                </div>
-                <ul className="social">
-                  <li>
-                    <a href="">
-                      <i className="fa fa-telegram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href=""  >
-                      <i className="fa fa-github"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" aria-hidden="true">
-                      <i className="fa fa-gitlab"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" aria-hidden="true">
-                      <i className="fa fa-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
               </div>
-            </div>
 
+            </div>
+            {/* blog body */}
+            <div className="col-lg-8 col-md-12 col-sm-12 blog-body text-right" dangerouslySetInnerHTML={{ __html: mainBlog.body }} />
           </div>
-          {/* blog body */}
-          <div className="col-lg-8 col-md-12 col-sm-12 blog-body text-right" dangerouslySetInnerHTML={{ __html: mainBlog.body }} />
         </div>
 
         <FullBanner />
