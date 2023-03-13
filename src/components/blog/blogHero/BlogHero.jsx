@@ -15,7 +15,7 @@ const BlogHero = ({ lastBlog, treepleBlog }) => {
       <div className='col-10 col-xl-6 col-lg-6 mx-lg-auto blog-post mx-auto'>
         <h1>بلاگ پرفکت کد</h1>
         {lastBlog.map((blog) => (
-          <HeroBlog id={blog.id} img={blog.img} alt={blog.title} date={blog.created_at} addedTime='4 دقیقه پیش' title={blog.title} />
+          <HeroBlog id={blog.id} img={blog.img} alt={blog.title} date={blog.created_at} title={blog.title} />
         ))}
       </div>
     </section>
