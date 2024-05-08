@@ -19,7 +19,7 @@ const Footer = () => {
   });
 
   return (
-    <Parallax onProgressChange={(progress) => setParallaxFooter(progress >= 0.353540166780227 ? true : false)} onExit={() => setParallaxFooter(false)}>
+    <Parallax onProgressChange={(progress) => setParallaxFooter(progress => 0.353540166780227 ? true : false)} onExit={() => setParallaxFooter(false)}>
       <footer
         className="text-center text-lg-start text-white"
         style={{ backgroundColor: "#1D263B" }}
@@ -30,12 +30,31 @@ const Footer = () => {
             <div className="row">
               {/* 1 */}
               <div className="text-center col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 className="text-right text-uppercase mb-4 font-weight-bold ">پل های ارتباطی</h6>
-                <p><i className="fa fa-envelope mr-3 "></i> <a href="mailto:perfectcodeteam@gmail.com">perfectcode@gmail.com</a></p>
-                <p><i className="fa fa-phone mr-3 ml-2"></i><a href="tel:09925438078">09925438078</a></p>
-                <p><i className="fa fa-phone mr-3 ml-2"></i><a href="tel:09102442108">09102442108</a></p>
+                <h6 className="text-right text-uppercase mb-4 font-weight-bold ">
+                  پل های ارتباطی
+                </h6>
+                <p>
+                  <i className="fa fa-envelope mr-3 "></i>&nbsp;
+                  <a
+                    href="mailto:perfectcodeteam@gmail.com"
+                    className="text-mute"
+                  >
+                    perfectcode@gmail.com
+                  </a>
+                </p>
+                <p>
+                  <i className="fa fa-phone mr-3 ml-2"></i>&nbsp;
+                  <a href="tel:09925438078" className="text-mute">
+                    09925438078
+                  </a>
+                </p>
+                <p>
+                  <i className="fa fa-phone mr-3 ml-2"></i>&nbsp;
+                  <a href="tel:09102442108" className="text-mute">
+                    09102442108
+                  </a>
+                </p>
               </div>
-
 
               <hr className="w-100 clearfix d-md-none" />
               {/* 2 */}
@@ -47,14 +66,19 @@ const Footer = () => {
                   <HashLink to={"/about#ourTeam"}>اعضای پرفکت</HashLink>
                 </p>
                 <p>
-                  <HashLink to={"/#samples"}>نمونه کار های ما</HashLink>
-
+                  <HashLink to={"/#samples"} className="text-mute">
+                    نمونه کار های ما
+                  </HashLink>
                 </p>
                 <p>
-                  <HashLink to={"/#comments"}>نظرات کاربران</HashLink>
+                  <HashLink to={"/#comments"} className="text-mute">
+                    نظرات کاربران
+                  </HashLink>
                 </p>
                 <p>
-                  <HashLink to={"/contact#faq"}>سوالات متداول</HashLink>
+                  <HashLink to={"/contact#faq"} className="text-mute">
+                    سوالات متداول
+                  </HashLink>
                 </p>
               </div>
 
@@ -63,16 +87,24 @@ const Footer = () => {
               <div className="text-center col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 text-right">
                 {/* <h6 className="text-uppercase mb-4 font-weight-bold">Products</h6> */}
                 <p>
-                  <Link to='/' className="text-white">صفحه اصلی</Link>
+                  <Link to="/" className="text-white">
+                    صفحه اصلی
+                  </Link>
                 </p>
                 <p>
-                  <Link to='/about' className="text-white">درباره ما</Link>
+                  <Link to="/about" className="text-mute">
+                    درباره ما
+                  </Link>
                 </p>
                 <p>
-                  <Link to='/about' className="text-white">تیم پرفکت</Link>
+                  <Link to="/about" className="text-mute">
+                    تیم پرفکت
+                  </Link>
                 </p>
                 <p>
-                  <Link to='/contact' className="text-white">تماس باما</Link>
+                  <Link to="/contact" className="text-mute">
+                    تماس باما
+                  </Link>
                 </p>
               </div>
 
@@ -83,45 +115,53 @@ const Footer = () => {
                   پرفکت کد
                 </h6>
                 <p>
-                  تنها چیزی که برای تیم طراحی سایت پرفکت کد مهم است ، کیفیت ، کارایی و بروز بودن است
+                  تنها چیزی که برای تیم طراحی سایت پرفکت کد مهم است ، کیفیت ،
+                  کارایی و بروز بودن است
                 </p>
               </div>
             </div>
           </section>
-
 
           <section className="p-3 pt-0" ref={parallax2.ref}>
             <div className="row d-flex align-items-center">
               <div className="col-md-7 col-lg-8 text-center text-md-start">
                 <div className="p-3">
                   © 2022 Copyright :
-                  <a className="text-white" href="https://perfectcode.ir/"
-                  > perfectcode.ir</a>
+                  <a className="text-white" href="https://perfectcode.ir/">
+                    {" "}
+                    perfectcode.ir
+                  </a>
                 </div>
               </div>
 
               <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
                 {/* <!-- Google --> */}
-                <a href='mailto:perfectcodeteam@gmail.com'
+                <a
+                  href="mailto:perfectcodeteam@gmail.com"
                   className="btn btn-outline-light btn-floating m-1"
                   //  className="text-white"
                   role="button"
-                ><i className="fa-brands fa-google"></i></a>
+                >
+                  <i className="fa-brands fa-google"></i>
+                </a>
 
                 {/* <!-- Instagram --> */}
-                <a href='https://instagram.com/_u/perfectcode.ir'
+                <a
+                  href="https://instagram.com/_u/perfectcode.ir"
                   className="btn btn-outline-light btn-floating m-1"
                   //  className="text-white"
                   role="button"
-                ><i className="fa-brands fa-instagram"></i></a>
+                >
+                  <i className="fa-brands fa-instagram"></i>
+                </a>
               </div>
             </div>
           </section>
           {/* <!-- Section: Copyright --> */}
         </div>
       </footer>
-    </Parallax >
-  )
+    </Parallax>
+  );
 }
 
 export default Footer

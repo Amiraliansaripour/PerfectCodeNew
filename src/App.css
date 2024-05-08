@@ -5,6 +5,8 @@
   --background: #141A2A;
   --sec-background: #1D263B;
   --blue-color: #1649FF;
+
+  --text-mute: #7e8699 ;
 }
 
 /* Modifire */
@@ -21,8 +23,18 @@
 .block-x {
   padding: 0 3rem;
 }
+.text-white {
+  color: var(--light-color);
+}
+.text-mute {
+  color: var(--text-mute) !important;
+}
 
-
+@media screen and (max-width: 768px) {
+  .block{
+    padding: 1.5rem 2.5rem;
+  }
+}
 /* Reset */
 * , *::before , *::after {
   padding: 0;
@@ -47,7 +59,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+:is(input,textarea)::placeholder, input , textarea{
+  font-size: 1.4rem !important;
+}
 /* typho */
 a {
   text-decoration: none;
@@ -64,7 +78,9 @@ h3,
 strong {
   direction: rtl;
 }
-
+h6 {
+  font-size: 1.8rem;
+}
 a:hover {
   color: #9da0a7;
 }
@@ -86,7 +102,9 @@ button {
   -ms-transition: .2s linear;
   -o-transition: .2s linear;
 }
-
+.btn  {
+  font-size: 1.2rem;
+}
 .btn-active {
   padding: 15px;
   border-radius: 10px;

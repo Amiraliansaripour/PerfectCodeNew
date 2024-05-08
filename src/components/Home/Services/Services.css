@@ -55,7 +55,7 @@
     align-items: center;
     justify-content: space-around;
     /* padding: 64px 32px; */
-    padding: 6.4rem 3.2rem;
+    padding: 4.4rem 3.2rem;
     background-color: #1D263B;
     border-radius: 24px;
     -webkit-border-radius: 24px;
@@ -82,4 +82,9 @@
     padding: 10px;
     width: 100%;
     color: #9499A6;
+}
+@media screen and (max-width:768px ) {
+    .services-grid div div  {   
+        padding: 4.4rem 2.2rem;
+    }
 }

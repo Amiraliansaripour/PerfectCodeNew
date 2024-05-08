@@ -15,11 +15,11 @@ const SampleBox = ({ img, name, categories, desc, link }) => {
             </div>
             <div className="sample-slide-description">
                 <div className="sample-slide-name">
-                    <h3 className='pe-2'>{name}</h3>
+                    <h3>{name}</h3>
                     <p>{categories}</p>
                 </div>
-                <p className='text-end'>{desc}</p>
-                <div className='w-100 mt-3 d-flex justify-content-between align-items-center border-0 btn disabled'>
+                <p>{desc}</p>
+                <div className='w-100 d-flex justify-content-between align-items-center border-0 btn disabled'>
                     <Link to={link}>پیش نمایش<i className="fa fa-angle-double-left "></i></Link>
                     <RWebShare
                         data={{

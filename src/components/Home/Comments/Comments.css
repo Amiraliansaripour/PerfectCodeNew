@@ -45,7 +45,7 @@
 
 .comment-slide {
     /* width: 400px; */
-    height: 265px;
+    /* height: 265px; */
     background-color: var(--sec-background);
     border-radius: 30px;
     display: flex;
@@ -154,15 +154,16 @@
 }
 
 .comment-profile-name p{
-    font-size: 14px;
+    font-size: 1.3rem;
 }
 
 .comment-slide-title .comment-profile .comment-profile-name a {
     direction: ltr;
+    font-size: 1.4rem;
 }
 
 .comment-slide-title .comment-instagram i {
-    font-size: 25px;
+    font-size: 2rem;
 }
 
 .comment-slide .comment-slide-decription {
@@ -177,4 +178,15 @@
 
 .comment-slide .comment-slide-decription p {
     color: #a6aab3;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 519px) {
+    .comment-slide .comment-slide-title {
+        display: flex;
+        flex-direction: column;
+    }
+    .comment-slide {
+        /* height: 365px; */
+    }
 }
