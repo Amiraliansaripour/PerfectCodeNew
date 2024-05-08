@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     background-color: #141A2A;
-    padding: 100px 0;
+    /* padding: 100px 0; */
     color: #fff;
 }
 
@@ -13,7 +13,7 @@
     align-items: center;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 0 100px;
+    /* padding: 0 100px; */
 }
 
 .services-title h2 {
@@ -39,9 +39,9 @@
 }
 
 
-.services-grid {
+/* .services-grid {
     padding: 20px;
-}
+} */
 
 .icon-box{
     width: 80px;
@@ -54,7 +54,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 64px 32px;
+    /* padding: 64px 32px; */
+    padding: 6.4rem 3.2rem;
     background-color: #1D263B;
     border-radius: 24px;
     -webkit-border-radius: 24px;

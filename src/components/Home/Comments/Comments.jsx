@@ -47,14 +47,14 @@ const Comments = () => {
         },
     };
     return (
-        <section className="comments" id='comments' ref={parallax.ref} style={{ filter: parallaxFooter ? 'blur(4px)' : 'blur(0)' }}>
+        <section className="comments container block" id='comments' ref={parallax.ref} style={{ filter: parallaxFooter ? 'blur(4px)' : 'blur(0)' }}>
             {/* <h2>نظرات کسب و کار ها</h2> */}
-            <div className="comment-title d-flex justify-content-center justify-content-lg-between">
+            <div className="comment-title d-flex justify-content-center justify-content-lg-between block-y">
                 <div>
-                    <h2 className='mb-4 mb-lg-0'>نظرات کاربران</h2>
+                    <h2 className=''>نظرات کاربران</h2>
                 </div>
                 <div>
-                    <p className='w-100 ms-4 mb-0 d-none d-lg-block'>نظرات رو بخون و تصمیم بگیر</p>
+                    <p className='w-100 ms-4 d-none d-lg-block'>نظرات رو بخون و تصمیم بگیر</p>
                 </div>
             </div>
             <div className="comment-slider">

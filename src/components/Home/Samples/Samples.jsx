@@ -41,7 +41,7 @@ const Samples = () => {
     },
   };
   return (
-    <section className="samples"  ref={parallax.ref} id='samples'>
+    <section className="samples block"  ref={parallax.ref} id='samples'>
       <div className="sample-title mb-5 flex-column flex-lg-row-reverse" >
         <h2 className='mb-4 mb-lg0'>نمونه کار ها</h2>
         <Link to="/samples" className="btn-active btn disabled">دیدن همه نمونه کارها</Link>

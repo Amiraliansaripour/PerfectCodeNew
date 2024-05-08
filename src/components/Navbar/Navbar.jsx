@@ -16,7 +16,7 @@ const Navbar = () => {
     const [navbar, setNavbar] = useState(false)
     return (
         <div>
-            <div className="header-list">
+            <div className="header-list block container">
                 <Link to='/'>
                     <div className="logo">
                         <img src="../assets/img/logo/logo.png" alt="پرفکت کد" width='60' height='60' />

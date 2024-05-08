@@ -2,6 +2,7 @@
     width: 100%;
     height: auto;
     display: flex;
+    gap: 1rem;
     align-items: center;
     flex-direction: column;
     color: #fff;
@@ -11,7 +12,7 @@
     align-items: center;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 0 100px;
+    /* padding: 0 100px; */
     width: 100%;
 }
 
@@ -35,14 +36,14 @@
     align-items: center;
     flex-direction: row-reverse;
     justify-content: space-around;
-    padding: 50px;
+    /* padding: 50px; */
     color: #fff;
-}
+} 
 
 .order-form {
     width: 50%;
     text-align: right;
-    padding: 35px;
+    /* padding: 35px; */
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -53,13 +54,13 @@
     width: 90%;
     height: 100%;
     background-color: var(--sec-background);
-    padding: 30px 35px;
+    /* padding: 30px 35px; */
     border-radius: 20px;
 }
 
 .order-form form button{
     margin-top: 26px;
-    padding: 15px 30px;
+    /* padding: 15px 30px; */
     border-radius: 10px;
     color: #fff;
     background-color: #1649ff;
@@ -74,7 +75,7 @@
     background-color: #2d364c;
     outline: 0;
     border: 0;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .order-form form input:focus {
@@ -101,7 +102,7 @@
     flex-direction: column;
     gap: 25px;
     text-align: right;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .cantact-details p {
@@ -115,7 +116,7 @@
 @media only screen and (max-width: 992px) {
     .contact-form {
         flex-direction: column-reverse;
-        padding: 20px;
+        /* padding: 20px; */
     }
 
     .order-form {
@@ -133,12 +134,12 @@
 
 @media only screen and (max-width: 768px) {
     .contact-form {
-        padding: 0px;
+        /* padding: 0px; */
     }
 
     .order-form {
         width: 100%;
-        padding: 35px 5px;
+        /* padding: 35px 5px; */
     }
 }
 

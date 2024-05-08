@@ -13,8 +13,8 @@ const Hero = () => {
         speed: -1,
     });
     return (
-        <div className="header">
-            <div className="header-content p-3" ref={parallax.ref} >
+        <div className="header block">
+            <div className="header-content block" ref={parallax.ref} >
                 <div className="content">
                     <h1 className='mt-5 mt-lg-0'>
                         تیم استارتاپی پرفکت کد

@@ -14,12 +14,19 @@ function App() {
   return (
     <ParallaxProvider>
       <ParallaxFooter>
-        <div className="App">
+        <div className="App container">
           <Router>
             <Navbar />
             <Routes>
               {routes.map((route, index) => {
-                return <Route path={route.path} element={route.element} exact={route.exact} key={index} />
+                return (
+                  <Route
+                    path={route.path}
+                    element={route.element}
+                    exact={route.exact}
+                    key={index}
+                  />
+                );
               })}
             </Routes>
             <Footer />

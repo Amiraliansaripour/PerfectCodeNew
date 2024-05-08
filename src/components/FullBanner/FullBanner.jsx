@@ -7,7 +7,7 @@ const FullBanner = () => {
         speed: 10,
     });
     return (
-        <section className="fullbanner-con" ref={parallax.ref}>
+        <section className="fullbanner-con block container" ref={parallax.ref}>
             <div className="fullbanner">
                 <div className="banner-title">
                     <h2>کسب و کارتو آنلاین کن</h2>

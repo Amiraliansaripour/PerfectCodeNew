@@ -1,3 +1,4 @@
+/* Root */
 :root {
   --light-color: #fff;
   --sec-color: #9499A6;
@@ -6,15 +7,45 @@
   --blue-color: #1649FF;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
+/* Modifire */
+.container  {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+.block {
+  padding: 3rem 5rem;
+}
+.block-y {
+  padding: 3rem 0;
+}
+.block-x {
+  padding: 0 3rem;
+}
+
+
+/* Reset */
+* , *::before , *::after {
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
 }
 
 body {
   background-color: #141A2A;
   font-family: "Vazirmatn", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* typho */
