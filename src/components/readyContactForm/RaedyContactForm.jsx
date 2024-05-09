@@ -29,6 +29,7 @@ const RaedyContactForm = ({ title, tag ,id}) => {
                 className="form-control mt-3"
                 id="desc"
                 placeholder="...  سایتی فروشگاهی با امکانات"
+                rows={5}
               ></textarea>
             </div>
             <button className="btn-active">ارسال</button>

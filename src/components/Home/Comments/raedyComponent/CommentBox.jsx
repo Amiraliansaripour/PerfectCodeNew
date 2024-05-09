@@ -2,7 +2,7 @@ import React from 'react'
 
 const CommentBox = ({ img, name, tagName, tagLink, desc }) => {
     return (
-        <div className="comment-slide">
+        <div className="comment-slide" >
             <div className="comment-slide-title mt-3">
                 <div className="comment-profile">
                     <div className="comment-img">

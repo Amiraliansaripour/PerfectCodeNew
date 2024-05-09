@@ -198,17 +198,14 @@
     font-size: 1.2rem;
   } */
 }
-@media screen and (max-width: 992px) {
-  .join-btn {
+@media screen and (max-width: 400px) {
+  .join-btn{
     display: flex;
     flex-direction: column;
   }
 }
 @media screen and (max-width:550px) {
-  .join-btn{
-    display: flex;
-    flex-direction: column;
-  }
+  
   .content-image .obgect-img {
    right: 10%;
   }

@@ -17,7 +17,7 @@ const Services = () => {
                 </div>
             </div>
             <div className="services-grid block-y">
-                <div className="row box gap-5 justify-content-center mx-3 m-md-0">
+                <div className="row box gap-lg-5 gap-3 justify-content-center m-md-0">
                     <ServiceBox title='برند سازی' icon='fa fa-dragon' desc='برندینگ و تاثیرگذاری در ذهن مخاطب همیشه حائز اهمیت بوده و تیم ما در این زمینه نیز به شما کمک می کند' />
                     <ServiceBox title='UI/UX طراحی' icon='fa fa-pencil' desc='باعث بهبود تجربه کاربری و رضایت مشتری می‌شود که در نهایت به افزایش تعداد کاربران یک برنامه یا سایت کمک می‌کند' />
                     <ServiceBox title='اپلیکیشن' icon='fa fa-mobile-alt' desc='امروزه اکثر کسب و کار ها اپلیکیشن های اختصاصی خود را راه اندازی می کنند تا همیشه و در هر زمان با مشتریان ارتباط برقرار کنند' />
