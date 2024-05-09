@@ -32,7 +32,13 @@
 
 @media screen and (max-width: 768px) {
   .block{
-    padding: 1.5rem 2.5rem !important;
+    padding: 5rem 3rem !important;
+  }
+  .block-y {
+    padding: 5rem 0;
+  }
+  .block-x {
+    padding: 0 3rem;
   }
 }
 /* Reset */
