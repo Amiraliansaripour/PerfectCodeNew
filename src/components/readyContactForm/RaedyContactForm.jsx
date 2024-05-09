@@ -2,7 +2,7 @@ import React from 'react'
 
 const RaedyContactForm = ({ title, tag ,id}) => {
     return (
-      <section className="contact block" id={id}>
+      <section className="contact block-y " id={id}>
         <div className="order-form-box">
           <form className='block'>
             <div className="form-group custom-form">
@@ -48,16 +48,16 @@ const RaedyContactForm = ({ title, tag ,id}) => {
               بگیرید و یا فرم مربوط به ثبت سفارش را تکمیل کرده تا کارشناسان ما
               در اسرع وقت با شما تماس بگیرند.
             </p>
-            <p>
+            {/* <p>
               همچنین میتوانید با شماره{" "}
               <a href="tel:09925438078" style={{ color: "#1649FF" }}>
                 09925438078
               </a>{" "}
               تماس حاصل فرمایید
-            </p>
+            </p> */}
             <p>
-              اولین سفارشت رو ثبت کن و از 20% تخفیف بهره مند شو
-              <br />
+              {/* اولین سفارشت رو ثبت کن و از 20% تخفیف بهره مند شو
+              <br /> */}
               <span style={{ color: "#1649FF" }}>
                 {" "}
                 تیم ما همه جوره هواتو داره و نگران هیچ چیز نباش

@@ -4,7 +4,7 @@ const Social = () => {
   return (
     <div className="social">
       <div>
-        <p>ما در شبکه های اجتماعی</p>
+        <p>شبکه های اجتماعی</p>
       </div>
       <div className="social-img">
         <a href="https://perfectcode.ir">
