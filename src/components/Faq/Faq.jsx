@@ -6,7 +6,7 @@ import { BgBlur } from '../provider/ParallaxFooter';
 const Faq = () => {
     const [parallaxFooter, setParallaxFooter] = useContext(BgBlur)
     return (
-        <section className="faq " style={{ filter: parallaxFooter ? 'blur(4px)' : 'blur(0)' , margin:'50px 0', padding:'40px' }} id='faq'>
+        <section className="faq block " style={{ filter: parallaxFooter ? 'blur(4px)' : 'blur(0)' , margin:'50px 0', padding:'40px' }} id='faq'>
             <h2 className='mb-5'>پرسش های متداول</h2>
 
             <div className="faq-container">

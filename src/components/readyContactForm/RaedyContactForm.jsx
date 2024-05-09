@@ -2,7 +2,7 @@ import React from 'react'
 
 const RaedyContactForm = ({ title, tag ,id}) => {
     return (
-      <section className="contact block-y" id={id}>
+      <section className="contact block" id={id}>
         <div className="order-form-box">
           <form className='block'>
             <div className="form-group custom-form">
